@@ -1,1 +1,4 @@
 # Harry-Potter
+
+This is a project where three boys build a fan page about Harry Potter. Lets see how we magical create a react website.
+
