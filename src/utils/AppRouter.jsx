@@ -7,9 +7,9 @@ import { createBrowserRouter, Navigate } from "react-router-dom";
 // import  UserList  from "../pages/UserList.jsx";
 // import  NotFound from "../pages/NotFound.jsx"
 
-export const AppRouter = createBrowserRouter([
+const AppRouter = createBrowserRouter([
   {
-    path: "/",
+    // path: "/",
     // element: <App />,
     children: [
       {
@@ -50,3 +50,4 @@ export const AppRouter = createBrowserRouter([
   },
 ]);
 
+export default AppRouter;
