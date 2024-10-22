@@ -1,9 +1,10 @@
 import { createContext, useState, useEffect } from "react";
-import { fetchData } from "./fetchData.js";
 
-export const AppContext = createContext();
+import  fetchData  from "./fetchData.js";
 
-export const AppProvider = ({ children }) => {
+export const AppContextSpells = createContext();
+
+const AppProviderSpells = ({ children }) => {
   const [allSpellsData, setAllSpellsData] = useState([]);
 
 
@@ -14,8 +15,10 @@ export const AppProvider = ({ children }) => {
   }, []);
 
   return (
-    <AppContext.Provider value={{ allSpellsData, setAllSpellsData}}>
+    <AppContextSpells.Provider value={{ allSpellsData, setAllSpellsData}}>
       {children}
-    </AppContext.Provider>
+    </AppContextSpells.Provider>
   );
 };
+
+export default AppProviderSpells;

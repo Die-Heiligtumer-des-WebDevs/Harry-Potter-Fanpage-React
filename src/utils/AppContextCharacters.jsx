@@ -1,9 +1,10 @@
 import { createContext, useState, useEffect } from "react";
-import { fetchData } from "./fetchData.js";
 
-export const AppContext = createContext();
+import  fetchData  from "./fetchData.js";
 
-export const AppProvider = ({ children }) => {
+export const AppContextCharachters = createContext();
+
+const AppProviderCharacters = ({ children }) => {
   const [allCharactersData, setAllCharactersData] = useState([]);
 
 
@@ -14,8 +15,10 @@ export const AppProvider = ({ children }) => {
   }, []);
 
   return (
-    <AppContext.Provider value={{ allCharactersData, setAllCharactersData}}>
+    <AppContextCharachters.Provider value={{ allCharactersData, setAllCharactersData}}>
       {children}
-    </AppContext.Provider>
+    </AppContextCharachters.Provider>
   );
 };
+
+export default AppProviderCharacters;
