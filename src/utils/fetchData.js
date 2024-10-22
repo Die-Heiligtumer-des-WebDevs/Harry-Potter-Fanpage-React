@@ -1,6 +1,6 @@
 const apiUrl = "https://hp-api.onrender.com/api";
 
-export const fetchData = async (endpoint) => {
+const fetchData = async (endpoint) => {
   if (!endpoint && typeof endpoint !== "string") {
     throw new Error("a valid endpoint must be provided");
   }
@@ -18,3 +18,5 @@ export const fetchData = async (endpoint) => {
     throw new Error(e);
   }
 };
+
+export default fetchData
