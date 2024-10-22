@@ -1,8 +1,11 @@
-# React + Vite
+# Harry-Potter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a project where three boys build a fan page about Harry Potter. Lets see how we magically create a react website.
 
-Currently, two official plugins are available:
+# image
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# welcome
+
+# team
+
+# content
