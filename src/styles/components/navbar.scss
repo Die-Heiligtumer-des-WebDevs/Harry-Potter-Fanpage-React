@@ -1,0 +1,22 @@
+.navbar{
+    width: 100vw;
+    height: auto;
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10vw;
+                li{
+                        list-style: none;
+                        .socialMedia-box{
+                            display: flex;
+                            gap: 1vw;
+                        }
+                        
+                        .socialMedia-icons{
+                            width: 2.5vw;
+                            height: auto;
+                        }
+                }
+        }
+}

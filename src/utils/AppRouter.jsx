@@ -1,5 +1,5 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
-// import { App } from "../App";
+import  App  from "../App";
 // import  Home  from "../pages/Home.jsx";
 // import  Products  from "../pages/Products.jsx";
 // import  Contact  from "../pages/Contact.jsx";
@@ -9,8 +9,8 @@ import { createBrowserRouter, Navigate } from "react-router-dom";
 
 const AppRouter = createBrowserRouter([
   {
-    // path: "/",
-    // element: <App />,
+    path: "/",
+    element: <App />,
     children: [
       {
         path: "/home",
