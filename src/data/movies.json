@@ -1,72 +1,76 @@
 {
-    "title": "Harry Potter and the Sorcerer's Stone",
-    "director": "Chris Columbus",
-    "releaseYear": 2001,
-    "boxOffice": 974755371,
-    "duration": 152,
-    "genre": "Fantasy",
-    "rating": "PG"
-},
-{
-    "title": "Harry Potter and the Chamber of Secrets",
-    "director": "Chris Columbus",
-    "releaseYear": 2002,
-    "boxOffice": 879654119,
-    "duration": 161,
-    "genre": "Fantasy",
-    "rating": "PG"
-},
-{
-    "title": "Harry Potter and the Prisoner of Azkaban",
-    "director": "Alfonso Cuarón",
-    "releaseYear": 2004,
-    "boxOffice": 796688549,
-    "duration": 142,
-    "genre": "Fantasy",
-    "rating": "PG"
-},
-{
-    "title": "Harry Potter and the Goblet of Fire",
-    "director": "Mike Newell",
-    "releaseYear": 2005,
-    "boxOffice": 896392482,
-    "duration": 157,
-    "genre": "Fantasy",
-    "rating": "PG-13"
-},
-{
-    "title": "Harry Potter and the Order of the Phoenix",
-    "director": "David Yates",
-    "releaseYear": 2007,
-    "boxOffice": 942046974,
-    "duration": 138,
-    "genre": "Fantasy",
-    "rating": "PG-13"
-},
-{
-    "title": "Harry Potter and the Half-Blood Prince",
-    "director": "David Yates",
-    "releaseYear": 2009,
-    "boxOffice": 934562690,
-    "duration": 153,
-    "genre": "Fantasy",
-    "rating": "PG"
-},
-{
-    "title": "Harry Potter and the Deathly Hallows – Part 1",
-    "director": "David Yates",
-    "releaseYear": 2010,
-    "boxOffice": 976949301,
-    "duration": 146,
-    "genre": "Fantasy",
-    "rating": "PG-13"
-},
-{
-    "title": "Harry Potter and the Deathly Hallows – Part 2",
-    "director": "David Yates",
-    "releaseYear": 2011,
-    "boxOffice": 1342447505,
-    "duration": 130,
-    "genre": "Fantasy",
-    "rating": "PG-13"
+    "movies": [
+        {
+            "title": "Harry Potter and the Sorcerer's Stone",
+            "director": "Chris Columbus",
+            "releaseYear": 2001,
+            "boxOffice": 974755371,
+            "duration": 152,
+            "genre": "Fantasy",
+            "rating": "PG"
+        },
+        {
+            "title": "Harry Potter and the Chamber of Secrets",
+            "director": "Chris Columbus",
+            "releaseYear": 2002,
+            "boxOffice": 879654119,
+            "duration": 161,
+            "genre": "Fantasy",
+            "rating": "PG"
+        },
+        {
+            "title": "Harry Potter and the Prisoner of Azkaban",
+            "director": "Alfonso Cuarón",
+            "releaseYear": 2004,
+            "boxOffice": 796688549,
+            "duration": 142,
+            "genre": "Fantasy",
+            "rating": "PG"
+        },
+        {
+            "title": "Harry Potter and the Goblet of Fire",
+            "director": "Mike Newell",
+            "releaseYear": 2005,
+            "boxOffice": 896392482,
+            "duration": 157,
+            "genre": "Fantasy",
+            "rating": "PG-13"
+        },
+        {
+            "title": "Harry Potter and the Order of the Phoenix",
+            "director": "David Yates",
+            "releaseYear": 2007,
+            "boxOffice": 942046974,
+            "duration": 138,
+            "genre": "Fantasy",
+            "rating": "PG-13"
+        },
+        {
+            "title": "Harry Potter and the Half-Blood Prince",
+            "director": "David Yates",
+            "releaseYear": 2009,
+            "boxOffice": 934562690,
+            "duration": 153,
+            "genre": "Fantasy",
+            "rating": "PG"
+        },
+        {
+            "title": "Harry Potter and the Deathly Hallows – Part 1",
+            "director": "David Yates",
+            "releaseYear": 2010,
+            "boxOffice": 976949301,
+            "duration": 146,
+            "genre": "Fantasy",
+            "rating": "PG-13"
+        },
+        {
+            "title": "Harry Potter and the Deathly Hallows – Part 2",
+            "director": "David Yates",
+            "releaseYear": 2011,
+            "boxOffice": 1342447505,
+            "duration": 130,
+            "genre": "Fantasy",
+            "rating": "PG-13"
+        }
+    ]
 }
