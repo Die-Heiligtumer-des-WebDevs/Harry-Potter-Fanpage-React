@@ -5,8 +5,12 @@ function CharacterCard({ data }) {
         {data.map(({ id, name, image, alternate_names }) => (
           <div key={id} className="single-student-container">
             <h3>{name}</h3>
-            <img style={{ width: "100px" }} src={image} alt={name} />
-            <p>{alternate_names[0]}</p>
+            <img src={image} alt={name} />
+            <p>
+              {alternate_names && alternate_names.length > 0
+                ? alternate_names[0]
+                : "I've got not alternate names :("}
+            </p>
           </div>
         ))}
       </div>

@@ -14,8 +14,6 @@ const Books = () => {
       .then((data) => setData(data))
       .catch((e) => setError(JSON.stringify(e)));
   });
-//   const booksOnly = data.filter()
-//   );
   
   return (
     <>
