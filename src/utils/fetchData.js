@@ -8,7 +8,7 @@ const fetchData = async (endpoint) => {
     return fetch(`${apiUrl}/${endpoint}`)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data)
+        // console.log(data)
         return data;
     
       });

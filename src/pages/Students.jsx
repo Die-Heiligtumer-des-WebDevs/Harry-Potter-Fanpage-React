@@ -20,6 +20,7 @@ const Students = () => {
   );
   return (
     <>
+      {error && <p>Error..</p> }
       <div className="students-container">
         {studentsOnly.map((student) => (
           <div key={student.id} className="single-student-container">
