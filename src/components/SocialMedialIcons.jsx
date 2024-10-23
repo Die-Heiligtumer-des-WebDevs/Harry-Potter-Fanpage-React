@@ -1,14 +1,12 @@
 import { FaInstagram, FaYoutube, FaTwitter, FaFacebook } from "react-icons/fa";
 
-import "../styles/components/socialMedialIcons.scss"
-
 const SocialMedia = () => {
     return(
         <div className="socialMedia-box">
-            <span><FaInstagram className="socialMedia-icons"/></span>
-            <span><FaYoutube  className="socialMedia-icons"/></span>
-            <span><FaTwitter  className="socialMedia-icons"/></span>
-            <span><FaFacebook className="socialMedia-icons"/></span>
+            <a href="https://www.instagram.com/harrypotter/?hl=en" target="blank"><FaInstagram className="socialMedia-icons"/></a>
+            <a href="https://www.youtube.com/@harrypotter" target="blank"><FaYoutube  className="socialMedia-icons"/></a>
+            <a href="https://x.com/harrypotter/?hl=en" target="blank"><FaTwitter  className="socialMedia-icons"/></a>
+            <a href="https://www.facebook.com/harrypotter/?hl=en" target="blank"><FaFacebook className="socialMedia-icons"/></a>
         </div>
     )
 }
