@@ -10,7 +10,7 @@ import AppProviderSpells from "./utils/AppContextSpells.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <AppProviderCharacters>
+    <AppProviderCharacters> 
       <AppProviderSpells>
         <RouterProvider router={AppRouter} />
       </AppProviderSpells>

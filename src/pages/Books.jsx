@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 // import { AppContextCharachters } from "../utils/AppContextCharacters.jsx";
 // import { useContext } from "react";
 
-const Students = () => {
+const Books = () => {
   //   const { studentsData = [] } = useContext(AppContextCharachters);
 
   const [data, setData] = useState([]);
@@ -14,22 +14,21 @@ const Students = () => {
       .then((data) => setData(data))
       .catch((e) => setError(JSON.stringify(e)));
   });
-
-  const studentsOnly = data.filter(
-    (student) => student.hogwartsStudent === true
-  );
+//   const booksOnly = data.filter()
+//   );
+  
   return (
     <>
       <div className="students-container">
-        {studentsOnly.map((student) => (
-          <div key={student.id} className="single-student-container">
-            <h3>{student.name}</h3>
+        {data.map((book) => (
+          <div key={book.id} className="single-student-container">
+            <h3>{book.name}</h3>
             <img
               style={{ width: "100px" }}
-              src={student.image}
-              alt={student.name}
+              src={book.image}
+              alt={book.name}
             />
-            <p>{student.alternate_names[0]}</p>
+            <p>{book.alternate_names[0]}</p>
           </div>
         ))}
       </div>
@@ -37,4 +36,4 @@ const Students = () => {
   );
 };
 
-export default Students;
+export default Books;
