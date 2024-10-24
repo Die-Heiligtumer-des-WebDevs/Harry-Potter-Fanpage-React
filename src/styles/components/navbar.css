@@ -1,0 +1,21 @@
+.navbar {
+  width: 100vw;
+  height: auto;
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+}
+.navbar ul li {
+  list-style: none;
+}
+.navbar ul li .socialMedia-box {
+  display: flex;
+  gap: 1vw;
+}
+.navbar ul li .socialMedia-icons {
+  width: 2.5vw;
+  height: auto;
+}/*# sourceMappingURL=navbar.css.map */
