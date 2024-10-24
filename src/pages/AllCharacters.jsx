@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import SearchOptions from "../components/SearchOptions.jsx";
 import CharacterCard from "../components/CharacterCard.jsx";
 
-import "../styles/components/CharacterCards.scss";
+import "../styles/main.scss";
 
 // import { AppContextCharachters } from "../utils/AppContextCharacters.jsx";
 // import { useContext } from "react";
@@ -36,6 +36,10 @@ const AllCharacters = () => {
   
   return (
     <>
+    {error && <p>{error}</p> }
+    <div className="">
+
+    
       <h1>Find your favourite Hogwart People</h1>
       <div className="filter-container">
         <SearchOptions
@@ -49,7 +53,7 @@ const AllCharacters = () => {
       </div>
       <div className="cards-container">
         <CharacterCard data={filteredData} />
-      </div>
+      </div></div>
     </>
   );
 };

@@ -7,7 +7,8 @@
             "boxOffice": 974755371,
             "duration": 152,
             "genre": "Fantasy",
-            "rating": "PG"
+            "rating": "PG",
+            "poster": "https://www.wizardingworld.com/images/products/films/rectangle-1.png"
         },
         {
             "title": "Harry Potter and the Chamber of Secrets",
@@ -16,7 +17,8 @@
             "boxOffice": 879654119,
             "duration": 161,
             "genre": "Fantasy",
-            "rating": "PG"
+            "rating": "PG",
+            "poster": "https://www.wizardingworld.com/images/products/films/rectangle-2.png"
         },
         {
             "title": "Harry Potter and the Prisoner of Azkaban",
@@ -25,7 +27,8 @@
             "boxOffice": 796688549,
             "duration": 142,
             "genre": "Fantasy",
-            "rating": "PG"
+            "rating": "PG",
+            "poster": "https://www.wizardingworld.com/images/products/films/rectangle-3.png"
         },
         {
             "title": "Harry Potter and the Goblet of Fire",
@@ -34,7 +37,8 @@
             "boxOffice": 896392482,
             "duration": 157,
             "genre": "Fantasy",
-            "rating": "PG-13"
+            "rating": "PG-13",
+            "poster": "https://www.wizardingworld.com/images/products/films/rectangle-4.png"
         },
         {
             "title": "Harry Potter and the Order of the Phoenix",
@@ -43,7 +47,8 @@
             "boxOffice": 942046974,
             "duration": 138,
             "genre": "Fantasy",
-            "rating": "PG-13"
+            "rating": "PG-13",
+            "poster": "https://www.wizardingworld.com/images/products/films/rectangle-5.png"
         },
         {
             "title": "Harry Potter and the Half-Blood Prince",
@@ -52,7 +57,8 @@
             "boxOffice": 934562690,
             "duration": 153,
             "genre": "Fantasy",
-            "rating": "PG"
+            "rating": "PG",
+            "poster": "https://www.wizardingworld.com/images/products/films/rectangle-6.png"
         },
         {
             "title": "Harry Potter and the Deathly Hallows – Part 1",
@@ -61,7 +67,8 @@
             "boxOffice": 976949301,
             "duration": 146,
             "genre": "Fantasy",
-            "rating": "PG-13"
+            "rating": "PG-13",
+            "poster": "https://www.wizardingworld.com/images/products/films/rectangle-7.png"
         },
         {
             "title": "Harry Potter and the Deathly Hallows – Part 2",
@@ -70,7 +77,8 @@
             "boxOffice": 1342447505,
             "duration": 130,
             "genre": "Fantasy",
-            "rating": "PG-13"
+            "rating": "PG-13",
+            "poster": "https://www.wizardingworld.com/images/products/films/rectangle-8.png"
         }
     ]
 }

@@ -1,0 +1,131 @@
+.books-container {
+  border: blue solid;
+  display: flex;
+  flex-flow: row wrap;
+}
+.books-container .single-book-container {
+  border: solid rgb(255, 0, 0);
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+.books-container .single-book-container:hover img {
+  transform: scale(3);
+  transition: 1s;
+}
+.books-container .single-book-container .book-content {
+  background-color: lightcoral;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.books-container .single-book-container h3 {
+  height: 70px;
+  border: solid;
+}
+.books-container .single-book-container img {
+  width: 150px;
+  object-fit: contain;
+  align-self: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.filter-container {
+  border: solid black 5px;
+}
+
+.cards-container {
+  border: solid black 5px;
+}
+.cards-container .students-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.cards-container .single-student-container {
+  border: solid rgb(255, 0, 0);
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+.cards-container .single-student-container:hover img {
+  transform: scale(3);
+  transition: 1s;
+}
+.cards-container .single-student-container img {
+  width: 150px;
+  aspect-ratio: 1/1.4;
+}
+
+.movies-container {
+  border: blue solid;
+  display: flex;
+  flex-flow: row wrap;
+}
+.movies-container .single-movie-container {
+  border: solid rgb(255, 0, 0);
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+.movies-container .single-movie-container:hover img {
+  transform: scale(3);
+  transition: 1s;
+}
+.movies-container .single-movie-container .movie-content {
+  background-color: lightcoral;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.movies-container .single-movie-container h3 {
+  height: 70px;
+  border: solid;
+}
+.movies-container .single-movie-container img {
+  width: 150px;
+  object-fit: contain;
+  align-self: center;
+}
+
+.HPLogo {
+  width: 15vw;
+  height: auto;
+}
+
+.navbar {
+  width: 100vw;
+  height: auto;
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+}
+.navbar ul li {
+  list-style: none;
+}
+.navbar ul li .socialMedia-box {
+  display: flex;
+  gap: 1vw;
+}
+.navbar ul li .socialMedia-icons {
+  width: 2.5vw;
+  height: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}/*# sourceMappingURL=main.css.map */

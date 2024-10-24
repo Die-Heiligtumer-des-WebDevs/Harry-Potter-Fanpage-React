@@ -8,7 +8,8 @@
             "genre": "Fantasy",
             "isbn": "978-0747532699",
             "language": "English",
-            "pages": 223
+            "pages": 223,
+            "cover": "https://www.wizardingworld.com/images/products/books/UK/rectangle-1.jpg"
         },
         {
             "title": "Harry Potter and the Chamber of Secrets",
@@ -18,7 +19,8 @@
             "genre": "Fantasy",
             "isbn": "978-0747538493",
             "language": "English",
-            "pages": 251
+            "pages": 251,
+            "cover": "https://www.wizardingworld.com/images/products/books/UK/rectangle-2.jpg"
         },
         {
             "title": "Harry Potter and the Prisoner of Azkaban",
@@ -28,7 +30,8 @@
             "genre": "Fantasy",
             "isbn": "978-0747542155",
             "language": "English",
-            "pages": 317
+            "pages": 317,
+            "cover": "https://www.wizardingworld.com/images/products/books/UK/rectangle-3.jpg"
         },
         {
             "title": "Harry Potter and the Goblet of Fire",
@@ -38,7 +41,8 @@
             "genre": "Fantasy",
             "isbn": "978-0747546245",
             "language": "English",
-            "pages": 636
+            "pages": 636,
+            "cover": "https://www.wizardingworld.com/images/products/books/UK/rectangle-4.jpg"
         },
         {
             "title": "Harry Potter and the Order of the Phoenix",
@@ -48,7 +52,8 @@
             "genre": "Fantasy",
             "isbn": "978-0747551003",
             "language": "English",
-            "pages": 766
+            "pages": 766,
+            "cover": "https://www.wizardingworld.com/images/products/books/UK/rectangle-5.jpg"
         },
         {
             "title": "Harry Potter and the Half-Blood Prince",
@@ -58,7 +63,8 @@
             "genre": "Fantasy",
             "isbn": "978-0747581086",
             "language": "English",
-            "pages": 607
+            "pages": 607,
+            "cover": "https://www.wizardingworld.com/images/products/books/UK/rectangle-6.jpg"
         },
         {
             "title": "Harry Potter and the Deathly Hallows",
@@ -68,7 +74,8 @@
             "genre": "Fantasy",
             "isbn": "978-0747595861",
             "language": "English",
-            "pages": 607
+            "pages": 607,
+            "cover": "https://www.wizardingworld.com/images/products/books/UK/rectangle-7.jpg"
         }
     ]
 }
