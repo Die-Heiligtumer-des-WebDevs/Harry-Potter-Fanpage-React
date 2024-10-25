@@ -15,7 +15,7 @@ const AppRouter = createBrowserRouter([
       {
         path: "",
         element: <HomePage />,
-      },
+       },
       {
         path: "products",
         // element: <Products />,
