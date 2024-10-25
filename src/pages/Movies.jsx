@@ -1,13 +1,12 @@
-import booksData from "../data/booksData.json";
+import moviesData from "../data/moviesData.json";
 import { useState, useEffect } from "react";
 
-import BookCard from "../components/BookCard.jsx";
-
+import MovieCard from "../components/MovieCard.jsx";
 import "../styles/main.scss";
 // import { AppContextCharachters } from "../utils/AppContextCharacters.jsx";
 // import { useContext } from "react";
 
-const Books = () => {
+const Movies = () => {
   //   const { studentsData = [] } = useContext(AppContextCharachters);
 
   const [data, setData] = useState([]);
@@ -15,7 +14,7 @@ const Books = () => {
 
   useEffect(() => {
     try {
-      setData(booksData.books);
+      setData(moviesData.movies);
     } catch (e) {
       console.error(e);
       setError("failed");
@@ -24,13 +23,13 @@ const Books = () => {
 
   return (
     <>
-      <h1>Harry Potters books</h1>
-      <div className="books-container">
+    <h1>Harry Potters Movies</h1>
+      <div className="movies-container">
         {error && <p>{error}</p>}
-        <BookCard data={data} />
+        <MovieCard data={data} />
       </div>
     </>
   );
 };
 
-export default Books;
+export default Movies;
