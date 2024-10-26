@@ -1,32 +1,19 @@
-import moviesData from "../data/moviesData.json";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 
 import MovieCard from "../components/MovieCard.jsx";
 import "../styles/main.scss";
-// import { AppContextCharachters } from "../utils/AppContextCharacters.jsx";
-// import { useContext } from "react";
+import { AppContext } from "../utils/AppContext.jsx";
+
 
 const Movies = () => {
-  //   const { studentsData = [] } = useContext(AppContextCharachters);
+ const { allMoviesData } = useContext(AppContext);
 
-  const [data, setData] = useState([]);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    try {
-      setData(moviesData.movies);
-    } catch (e) {
-      console.error(e);
-      setError("failed");
-    }
-  }, []);
 
   return (
     <>
     <h1>Harry Potters Movies</h1>
       <div className="movies-container">
-        {error && <p>{error}</p>}
-        <MovieCard data={data} />
+        <MovieCard data={allMoviesData} />
       </div>
     </>
   );
