@@ -1,5 +1,6 @@
 [
     {
+        "id": "000000000001",
         "title": "Harry Potter and the Sorcerer's Stone",
         "director": "Chris Columbus",
         "releaseYear": 2001,
@@ -7,9 +8,11 @@
         "duration": 152,
         "genre": "Fantasy",
         "rating": "PG",
-        "poster": "https://www.wizardingworld.com/images/products/films/rectangle-1.png"
+        "poster": "https://www.wizardingworld.com/images/products/films/rectangle-1.png",
+        "shopLink": "https://www.rebuy.de/i,1163328/filme/harry-potter-1-der-stein-der-weisen"
     },
     {
+        "id": "000000000002",
         "title": "Harry Potter and the Chamber of Secrets",
         "director": "Chris Columbus",
         "releaseYear": 2002,
@@ -17,9 +20,11 @@
         "duration": 161,
         "genre": "Fantasy",
         "rating": "PG",
-        "poster": "https://www.wizardingworld.com/images/products/films/rectangle-2.png"
+        "poster": "https://www.wizardingworld.com/images/products/films/rectangle-2.png",
+        "shopLink": "https://www.rebuy.de/i,6045/filme/harry-potter-2-kammer-d-schreckens"
     },
     {
+        "id": "000000000003",
         "title": "Harry Potter and the Prisoner of Azkaban",
         "director": "Alfonso Cuarón",
         "releaseYear": 2004,
@@ -27,9 +32,11 @@
         "duration": 142,
         "genre": "Fantasy",
         "rating": "PG",
-        "poster": "https://www.wizardingworld.com/images/products/films/rectangle-3.png"
+        "poster": "https://www.wizardingworld.com/images/products/films/rectangle-3.png",
+        "shopLink": "https://www.rebuy.de/i,1163330/filme/harry-potter-3-der-gefangene-von-askaban"
     },
     {
+        "id": "000000000004",
         "title": "Harry Potter and the Goblet of Fire",
         "director": "Mike Newell",
         "releaseYear": 2005,
@@ -37,9 +44,11 @@
         "duration": 157,
         "genre": "Fantasy",
         "rating": "PG-13",
-        "poster": "https://www.wizardingworld.com/images/products/films/rectangle-4.png"
+        "poster": "https://www.wizardingworld.com/images/products/films/rectangle-4.png",
+        "shopLink": "https://www.rebuy.de/i,1508432/filme/harry-potter-4-feuerkelch-ultimate-edition"
     },
     {
+        "id": "000000000005",
         "title": "Harry Potter and the Order of the Phoenix",
         "director": "David Yates",
         "releaseYear": 2007,
@@ -47,9 +56,11 @@
         "duration": 138,
         "genre": "Fantasy",
         "rating": "PG-13",
-        "poster": "https://www.wizardingworld.com/images/products/films/rectangle-5.png"
+        "poster": "https://www.wizardingworld.com/images/products/films/rectangle-5.png",
+        "shopLink": "https://www.rebuy.de/i,67154/filme/harry-potter-5-orden-des-phoenix"
     },
     {
+        "id": "000000000006",
         "title": "Harry Potter and the Half-Blood Prince",
         "director": "David Yates",
         "releaseYear": 2009,
@@ -57,9 +68,11 @@
         "duration": 153,
         "genre": "Fantasy",
         "rating": "PG",
-        "poster": "https://www.wizardingworld.com/images/products/films/rectangle-6.png"
+        "poster": "https://www.wizardingworld.com/images/products/films/rectangle-6.png",
+        "shopLink": "https://www.rebuy.de/i,1196698/filme/harry-potter-6"
     },
     {
+        "id": "000000000007",
         "title": "Harry Potter and the Deathly Hallows – Part 1",
         "director": "David Yates",
         "releaseYear": 2010,
@@ -67,9 +80,11 @@
         "duration": 146,
         "genre": "Fantasy",
         "rating": "PG-13",
-        "poster": "https://www.wizardingworld.com/images/products/films/rectangle-7.png"
+        "poster": "https://www.wizardingworld.com/images/products/films/rectangle-7.png",
+        "shopLink": "https://www.rebuy.de/i,1856551/filme/harry-potter-und-die-heiligtuemer-des-todes-teil-1-2-disc"
     },
     {
+        "id": "000000000008",
         "title": "Harry Potter and the Deathly Hallows – Part 2",
         "director": "David Yates",
         "releaseYear": 2011,
@@ -77,6 +92,7 @@
         "duration": 130,
         "genre": "Fantasy",
         "rating": "PG-13",
-        "poster": "https://www.wizardingworld.com/images/products/films/rectangle-8.png"
+        "poster": "https://www.wizardingworld.com/images/products/films/rectangle-8.png",
+        "shopLink": "https://www.rebuy.de/i,1856551/filme/harry-potter-und-die-heiligtuemer-des-todes-teil-1-2-disc"
     }
 ]

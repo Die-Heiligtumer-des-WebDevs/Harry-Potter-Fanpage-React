@@ -8,12 +8,11 @@ import { AppContext } from "../utils/AppContext.jsx";
 const Movies = () => {
  const { allMoviesData } = useContext(AppContext);
 
-
   return (
     <>
     <h1>Harry Potters Movies</h1>
       <div className="movies-container">
-        <MovieCard data={allMoviesData} />
+        <MovieCard key={allMoviesData.id} data={allMoviesData} />
       </div>
     </>
   );
