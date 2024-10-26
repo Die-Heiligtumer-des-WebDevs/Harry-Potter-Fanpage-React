@@ -1,15 +1,12 @@
 import booksData from "../data/booksData.json";
-import { useState, useEffect } from "react";
-
+import { useState, useEffect, useContext } from "react";
+// import AppContext from "./utils/AppContext.jsx";
 import BookCard from "../components/BookCard.jsx";
 
 import "../styles/main.scss";
-// import { AppContextCharachters } from "../utils/AppContextCharacters.jsx";
-// import { useContext } from "react";
 
 const Books = () => {
-  //   const { studentsData = [] } = useContext(AppContextCharachters);
-
+  // const { data } = useContext(AppContext);
   const [data, setData] = useState([]);
   const [error, setError] = useState(null);
 
