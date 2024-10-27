@@ -6,10 +6,8 @@ function SingleBookCard() {
   const { id } = useParams();
   const { allBooksData } = useContext(AppContext);
 
-  const singleBook = allBooksData;
-//   .find(
-    // (book) => book.isbn === id
-//   );
+  const searchId = id;
+  const singleBook = allBooksData.find((book) => String(book.id) === searchId);
 
   return (
     <div key={id}>
@@ -24,7 +22,7 @@ function SingleBookCard() {
             <p>{singleBook.author}</p>
             <p>{singleBook.publicationYear} </p>
             <p>{singleBook.sales}</p>
-            <a href={singleBook.shopLink}>Buy here</a>
+            <a href={singleBook.shopLink} target="_blank">Buy here</a>
           </div>
         </>
       ) : (
@@ -34,4 +32,4 @@ function SingleBookCard() {
   );
 }
 
-export default SingleBookCard
+export default SingleBookCard;

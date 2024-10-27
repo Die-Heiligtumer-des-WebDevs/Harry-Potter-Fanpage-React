@@ -1,11 +1,12 @@
 import { Outlet } from "react-router-dom";
 
 //import Zauberschule from "./pages/zauberschule.jsx";
-
+// import Header from "./components/Header.jsx";
+//import Footer from "./components/Footer.jsx"
 function App() {
   return (
     <>
-         {/* <Header /> */}
+      {/* <Header />  */}
       <main>
         {/* 
         
@@ -17,6 +18,7 @@ function App() {
         */}
         <Outlet />
       </main>
+      {/* < Footer/> */}
     </>
   );
 }

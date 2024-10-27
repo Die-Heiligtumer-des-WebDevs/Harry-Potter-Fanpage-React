@@ -1,12 +1,14 @@
+/* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */
 import "../styles/main.css";
 import { NavLink } from "react-router-dom";
+
 function BookCard({ data }) {
   return (
     <>
-      <NavLink to={`/books/${data.isbn}`}>
-        {data.map(
-          ({ id, title, author, publicationYear, genre, pages, cover }) => (
+      {data.map(
+        ({ id, title, author, publicationYear, genre, pages, cover }) => (
+          <NavLink to={`/single-book/${id}`}>
             <div key={id} className="single-book-container">
               <div className="book-content">
                 <h3>{title}</h3>
@@ -17,9 +19,9 @@ function BookCard({ data }) {
                 <p>Pages: {pages}</p>
               </div>
             </div>
-          )
-        )}
-      </NavLink>
+          </NavLink>
+        )
+      )}
     </>
   );
 }
