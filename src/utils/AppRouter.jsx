@@ -1,11 +1,11 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import  App  from "../App";
 import  HomePage  from "../pages/HomePage.jsx";
-// import  Products  from "../pages/Products.jsx";
-// import  Contact  from "../pages/Contact.jsx";
-// import  UserRegistration  from "../pages/UserRegistration.jsx";
-// import  SpellCard  from "../pages/";
-// import  NotFound from "../pages/NotFound.jsx"
+// import  AllCharacters  from "../pages/AllCharacters.jsx";
+// import  Books  from "../pages/Books.jsx";
+// import  Movies  from "../pages/Movies.jsx";
+// import  Spells  from "../pages/Spells.jsx";
+// import  Games from "../pages/Games.jsx"
 
 const AppRouter = createBrowserRouter([
   {
