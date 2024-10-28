@@ -6,7 +6,11 @@
 @import "./components/harryPotterLogo.scss";
 @import "./components/navbar.scss";
 
-
+@font-face {
+    font-family: "Light";
+    src: local("HarryP-MVZ6w"), 
+    url("../font/HarryP-MVZ6w.ttf") format("truetype");
+}
 //import "../styles/main.scss"
 
 //use for every file _ before

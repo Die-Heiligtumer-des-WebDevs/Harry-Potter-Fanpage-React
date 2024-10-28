@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import fragen from '../data/quizFragen.json';
 import '../styles/components/quizGame.css';
+import "../fonts/HarryP-MVZ6w.ttf"
 
 const QuizGame = () => {
   const [aktuelleFrageIndex, setAktuelleFrageIndex] = useState(0);
