@@ -2,13 +2,14 @@ import { createBrowserRouter, Navigate } from "react-router-dom";
 import App from "../App";
 
 import HomePage from "../pages/HomePage.jsx";
-import CharactersPage from "../pages/CharactersPage.jsx"
+import CharactersPage from "../pages/CharactersPage.jsx";
+import SingleCharacterCard from "../components/SingleCharacterCard.jsx";
 import BooksPage from "../pages/BooksPage.jsx";
 import SingleBookCard from "../components/SingleBookCard.jsx";
-import MoviesPage  from "../pages/MoviesPage.jsx";
-import SingleMovieCard  from "../components/SingleMovieCard.jsx";
-import SpellsPage  from "../pages/SpellsPage.jsx";
-import HogwartsQuiz from "../pages/HogwartsQuiz.jsx"
+import MoviesPage from "../pages/MoviesPage.jsx";
+import SingleMovieCard from "../components/SingleMovieCard.jsx";
+import SpellsPage from "../pages/SpellsPage.jsx";
+import HogwartsQuiz from "../pages/HogwartsQuiz.jsx";
 // import NotFound from "../pages/NotFound.jsx"
 
 const AppRouter = createBrowserRouter([
@@ -23,34 +24,43 @@ const AppRouter = createBrowserRouter([
 
       {
         path: "characters",
-        element: <CharactersPage />,
+        children: [
+          {
+            path: "",
+            element: <CharactersPage />,
+          },
+          {
+            path: ":id",
+            element: <SingleCharacterCard />,
+          },
+        ],
       },
       {
         path: "books",
         children: [
           {
             path: "",
-            element: <BooksPage />
+            element: <BooksPage />,
           },
           {
             path: ":id",
-            element: <SingleBookCard />
-          }
-        ]
+            element: <SingleBookCard />,
+          },
+        ],
       },
-      
+
       {
         path: "movies",
         children: [
           {
             path: "",
-            element: <MoviesPage />
+            element: <MoviesPage />,
           },
           {
-            path:":id",
-            element: <SingleMovieCard />
-          }
-        ]
+            path: ":id",
+            element: <SingleMovieCard />,
+          },
+        ],
       },
       {
         path: "spells",
@@ -58,7 +68,7 @@ const AppRouter = createBrowserRouter([
       },
       {
         path: "hogwarts-quiz",
-        element: <HogwartsQuiz />
+        element: <HogwartsQuiz />,
       },
       {
         // path: "*",

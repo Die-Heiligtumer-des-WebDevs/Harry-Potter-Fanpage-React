@@ -1,12 +1,12 @@
 import { useState, useContext } from "react";
-import {AppContext} from "../utils/AppContext.jsx";
+import { AppContext } from "../utils/AppContext.jsx";
 
 import SearchOptions from "../components/SearchOptions.jsx";
 import CharacterCard from "../components/CharacterCard.jsx";
 
 import "../styles/main.css";
 
-const AllCharacters = () => {
+const Characters = () => {
   const [filter, setFilter] = useState("");
   const [visibleCount, setVisibleCount] = useState(25);
   const [onlyTeachers, setOnlyTeachers] = useState(false);
@@ -67,7 +67,9 @@ const AllCharacters = () => {
           />
         </div>
         <div className="cards-container">
-          <CharacterCard data={visibleData} />
+          {visibleData.map((character) => (
+            <CharacterCard key={character.id} data={character} />
+          ))}
           <button onClick={() => setVisibleCount(visibleCount + 25)}>
             Load more students...
           </button>
@@ -82,4 +84,4 @@ const AllCharacters = () => {
   );
 };
 
-export default AllCharacters;
+export default Characters;
