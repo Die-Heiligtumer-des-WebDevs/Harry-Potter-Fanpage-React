@@ -1,16 +1,9 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import App from "../App";
-<<<<<<< HEAD
 // import HomePage from "../pages/HomePage.jsx";
 
 // import Books from "../pages/Books.jsx";
 // import SingleBookCard from "../components/SingleBookCard.jsx";
-=======
-import HomePage from "../pages/HomePage.jsx";
-
-import Books from "../pages/Books.jsx";
-import SingleBookCard from "../components/SingleBookCard.jsx";
->>>>>>> main
 // import  Movies  from "../pages/Movies.jsx";
 // import  SingleMovieCard  from "../components/SingleMovieCard.jsx";
 // import AllCharacters from "../pages/AllCharacters.jsx"
@@ -26,11 +19,7 @@ const AppRouter = createBrowserRouter([
     children: [
       {
         path: "",
-<<<<<<< HEAD
         // element: <HomePage />,
-=======
-        element: <HomePage />,
->>>>>>> main
       },
 
       {
@@ -39,19 +28,11 @@ const AppRouter = createBrowserRouter([
       },
       {
         path: "books",
-<<<<<<< HEAD
         // element: <Books />,
       },
       {
         path: "single-book/:id",
         // element: <SingleBookCard />,
-=======
-        element: <Books />,
-      },
-      {
-        path: "single-book/:id",
-        element: <SingleBookCard />,
->>>>>>> main
       },
       {
         path: "movies",
