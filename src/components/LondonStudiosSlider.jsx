@@ -1,13 +1,14 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
+import React from 'react';
+import { useRef } from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import '../styles/components/londonStudiosSlide.css'
 
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import '../styles/components/londonStudiosSlide.css'
 
-import { Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 import slide_image_1 from "../assets/londonStudiosImg/img_4.jpg";
 import slide_image_2 from "../assets/londonStudiosImg/img_1.jpg";
@@ -18,57 +19,48 @@ import slide_image_6 from "../assets/londonStudiosImg/img_7.jpg";
 import slide_image_7 from "../assets/londonStudiosImg/img_9.jpg";
 
 const LondonStudiosSlider = () => {
-    return (
-        <div className="container">
-            <h1 className="heading">London Studios</h1>
-            <Swiper
-                effect={'fade'}  // Nutze 'fade' anstelle von 'coverflow'
-                grabCursor={true}
-                centeredSlides={true}
-                loop={true}
-                slidesPerView={'auto'}
-                pagination={{ el: 'swiper-pagination', clickable: true }}
-                navigation={{
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                    clickable: true,
-                }}
-                modules={[Pagination, Navigation]}
-                className='swiper_container'
-            >
-                <SwiperSlide>
-                    <img src={slide_image_4} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={slide_image_1} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={slide_image_2} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={slide_image_3} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={slide_image_6} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={slide_image_7} alt="slide_image" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={slide_image_5} alt="slide_image" />
-                </SwiperSlide>
-
-                <div className="slider-container">
-                    <div className="swiper-button-prev slider-arrow">
-                        <FaArrowAltCircleLeft name="arrow-back-outline" />
-                    </div>
-                    <div className="swiper-button-next slider-arrow">
-                        <FaArrowAltCircleRight name="arrow-forward-outline" />
-                    </div>
-                    <div className="swiper-pagination"></div>
-                </div>
-            </Swiper>
-        </div>
+        const progressCircle = useRef(null);
+        const progressContent = useRef(null);
+        const onAutoplayTimeLeft = (s, time, progress) => {
+          progressCircle.current.style.setProperty('--progress', 1 - progress);
+          progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+        };
+        return (
+          <>
+            <div>
+                <h1 className='LondonStudioH1'>London Studios</h1>
+                    <Swiper
+                      spaceBetween={30}
+                      centeredSlides={true}
+                      autoplay={{
+                        delay: 8000,
+                        disableOnInteraction: false,
+                      }}
+                      pagination={{
+                        clickable: true,
+                      }}
+                      navigation={true}
+                      modules={[Autoplay, Pagination, Navigation]}
+                      onAutoplayTimeLeft={onAutoplayTimeLeft}
+                      className="mySwiper"
+                    >
+                    
+                      <SwiperSlide><img src={slide_image_1} alt="slide_image" /></SwiperSlide>
+                      <SwiperSlide><img src={slide_image_2} alt="slide_image" /></SwiperSlide>
+                      <SwiperSlide><img src={slide_image_3} alt="slide_image" /></SwiperSlide>
+                      <SwiperSlide><img src={slide_image_4} alt="slide_image" /></SwiperSlide>
+                      <SwiperSlide><img src={slide_image_5} alt="slide_image" /></SwiperSlide>
+                      <SwiperSlide><img src={slide_image_6} alt="slide_image" /></SwiperSlide>
+                      <SwiperSlide><img src={slide_image_7} alt="slide_image" /></SwiperSlide>
+                      <div className="autoplay-progress" slot="container-end">
+                        <svg viewBox="0 0 48 48" ref={progressCircle}>
+                          <circle cx="24" cy="24" r="20"></circle>
+                        </svg>
+                        <span ref={progressContent}></span>
+                      </div>
+                    </Swiper>
+            </div>
+        </>
     );
 }
 

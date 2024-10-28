@@ -1,6 +1,6 @@
 import React, { useContext,useState, useEffect } from 'react';
 import { AppContext } from '../utils/AppContext'; 
-import '../styles/components/spells.css'; 
+import '../styles/components/spellsCard.css'; 
 
 import img1 from '../assets/spellsCardBackgroundImg/image1.jpg';
 import img2 from '../assets/spellsCardBackgroundImg/image2.webp';
