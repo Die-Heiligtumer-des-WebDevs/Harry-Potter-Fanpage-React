@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'; // Importiere useNavigate für die Navigation
-import '../styles/components/zauberschule.css';
+import '../styles/components/HogwartsQuiz.css';
 
 
 
