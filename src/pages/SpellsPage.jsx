@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import fetchData from "../utils/fetchData";
-// CSS importieren
+import "../styles/components/SpellsPageStyle.css"
 
 function SpellsPage() {
   const [spells, setSpells] = useState([]);
@@ -41,6 +41,7 @@ function SpellsPage() {
   }
 
   return (
+    <div className="zaubersprüche">
     <div className="spells-page">
       <h1 className="title">Zaubersprüche</h1>
       <div className="spells-container">
@@ -69,6 +70,7 @@ function SpellsPage() {
           <button onClick={() => setActiveSpell(null)}>Schließen</button>
         </div>
       )}
+    </div>
     </div>
   );
 }
