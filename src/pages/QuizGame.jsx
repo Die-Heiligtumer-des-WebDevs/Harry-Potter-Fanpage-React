@@ -42,6 +42,7 @@ const QuizGame = () => {
   };
 
   return (
+    <div className= "allefragen">
     <div className="quiz-container">
       <div className="quiz-box">
         <h2>Harry Potter Quiz</h2>
@@ -73,6 +74,7 @@ const QuizGame = () => {
           </div>
         )}
       </div>
+    </div>
     </div>
   );
 };
