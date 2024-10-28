@@ -68,3 +68,18 @@
     border: 10px solid gold;
   }
 }
+
+@media (max-width : 1024px) {
+  .swiper{
+    height: 25vh;
+    margin: 2vh auto;
+    .autoplay-progress{
+      width: 20px;
+      height: 20px; 
+    }
+    .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    border: 4px solid gold;
+  }
+  }
+}

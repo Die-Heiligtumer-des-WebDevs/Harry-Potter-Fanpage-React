@@ -45,7 +45,7 @@ const Spells = () => {
           {randomSpells.map((spell, index) => {
               
               return (
-                  <div key={index} className="spell-card" style={{ backgroundImage: `url(${shuffledImages[index]})` }}>
+                  <div key={index} className="spell-card-home" style={{ backgroundImage: `url(${shuffledImages[index]})` }}>
                       <div className="spell-overlay">
                           <h2>{spell.name}</h2>
                           <p>{spell.description}</p>
