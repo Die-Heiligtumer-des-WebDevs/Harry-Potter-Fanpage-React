@@ -1,19 +1,12 @@
-import fetchData from "../utils/fetchData.js";
-import { useState, useEffect } from "react";
+import { useState, useContext } from "react";
+import {AppContext} from "../utils/AppContext.jsx";
 
 import SearchOptions from "../components/SearchOptions.jsx";
 import CharacterCard from "../components/CharacterCard.jsx";
 
-import "../styles/main.scss";
-
-// import { AppContextCharachters } from "../utils/AppContextCharacters.jsx";
-// import { useContext } from "react";
+import "../styles/main.css";
 
 const AllCharacters = () => {
-  //   const { studentsData = [] } = useContext(AppContextCharachters);
-
-  const [data, setData] = useState([]);
-  const [error, setError] = useState(null);
   const [filter, setFilter] = useState("");
   const [visibleCount, setVisibleCount] = useState(25);
   const [onlyTeachers, setOnlyTeachers] = useState(false);
@@ -23,19 +16,15 @@ const AllCharacters = () => {
   const [onlyRav, setOnlyRav] = useState(false);
   const [onlyHuf, setOnlyHuf] = useState(false);
 
-  useEffect(() => {
-    fetchData("characters")
-      .then((data) => setData(data))
-      .catch((e) => setError(JSON.stringify(e)));
-  }, []);
+  const { allCharactersData } = useContext(AppContext);
 
-  const filteredData = data.filter((filter) => {
-    const filterTeacher = onlyTeachers ? filter.hogwartsStaff === true : true;
-    const filterStudent = onlyStudents ? filter.hogwartsStudent === true : true;
-    const filterHuf = onlyHuf ? filter.house === "Hufflepuff" : true;
-    const filterGry = onlyGry ? filter.house === "Gryffindor" : true;
-    const filterRav = onlyRav ? filter.house === "Ravenclaw" : true;
-    const filterSly = onlySly ? filter.house === "Slytherin" : true;
+  const filteredData = allCharactersData.filter((char) => {
+    const filterTeacher = onlyTeachers ? char.hogwartsStaff === true : true;
+    const filterStudent = onlyStudents ? char.hogwartsStudent === true : true;
+    const filterHuf = onlyHuf ? char.house === "Hufflepuff" : true;
+    const filterGry = onlyGry ? char.house === "Gryffindor" : true;
+    const filterRav = onlyRav ? char.house === "Ravenclaw" : true;
+    const filterSly = onlySly ? char.house === "Slytherin" : true;
     // const filterHouse = filter.house
     //   .toLowerCase()
     //   .includes(filter);
@@ -52,7 +41,6 @@ const AllCharacters = () => {
   const visibleData = filteredData.slice(0, visibleCount);
   return (
     <>
-      {error && <p>{error}</p>}
       <div className="">
         <h1>Find your favourite Hogwart People</h1>
         {/* <div>
@@ -80,7 +68,9 @@ const AllCharacters = () => {
         </div>
         <div className="cards-container">
           <CharacterCard data={visibleData} />
-          <button onClick={() => setVisibleCount(visibleCount + 25)}>Load more students...</button>
+          <button onClick={() => setVisibleCount(visibleCount + 25)}>
+            Load more students...
+          </button>
         </div>
         <div>
           <button onClick={() => window.scroll({ top: 0, behavior: "smooth" })}>
