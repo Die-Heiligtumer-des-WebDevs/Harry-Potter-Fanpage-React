@@ -1,0 +1,53 @@
+[
+    {
+      "question": "Was ist Harry Potters Patronus?",
+      "options": ["Hirsch", "Pferd", "Eule", "Phönix"],
+      "answer": "Hirsch"
+    },
+    {
+      "question": "Wer war der Halbblutprinz?",
+      "options": ["Dumbledore", "Snape", "Harry", "Voldemort"],
+      "answer": "Snape"
+    },
+    {
+      "question": "Wie lautet das Passwort zum Gemeinschaftsraum von Gryffindor?",
+      "options": ["Alohomora", "Felix Felicis", "Caput Draconis", "Expelliarmus"],
+      "answer": "Caput Draconis"
+    },
+    {
+      "question": "Was für ein Tier kann sich Professor McGonagall verwandeln?",
+      "options": ["Hund", "Katze", "Ratte", "Eule"],
+      "answer": "Katze"
+    },
+    {
+      "question": "Was bedeutet das Wort 'Muggel'?",
+      "options": ["Zauberer", "Geist", "Nicht-magisches Wesen", "Hauself"],
+      "answer": "Nicht-magisches Wesen"
+    },
+    {
+      "question": "Wie lautet der Name des Zaubertranklehrers in Harrys erstem Schuljahr?",
+      "options": ["Dumbledore", "Snape", "Lupin", "McGonagall"],
+      "answer": "Snape"
+    },
+    {
+      "question": "Welches Haus ist für seinen Mut bekannt?",
+      "options": ["Hufflepuff", "Slytherin", "Gryffindor", "Ravenclaw"],
+      "answer": "Gryffindor"
+    },
+    {
+      "question": "Wie nennt man jemanden, der mit Schlangen sprechen kann?",
+      "options": ["Seher", "Parseltongue", "Metamorphmagus", "Auror"],
+      "answer": "Parseltongue"
+    },
+    {
+      "question": "Wer ist der Autor der 'Geschichten von Beedle dem Barden'?",
+      "options": ["Albus Dumbledore", "Hermione Granger", "Beedle der Barde", "Gilderoy Lockhart"],
+      "answer": "Beedle der Barde"
+    },
+    {
+      "question": "Wie heißt der dreiköpfige Hund, der den Stein der Weisen bewacht?",
+      "options": ["Fluffy", "Aragog", "Norbert", "Fang"],
+      "answer": "Fluffy"
+    }
+  ]
+  
