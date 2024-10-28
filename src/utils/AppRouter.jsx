@@ -2,11 +2,11 @@ import { createBrowserRouter, Navigate } from "react-router-dom";
 import App from "../App";
 
 import HomePage from "../pages/HomePage.jsx";
-import Books from "../pages/Books.jsx";
+import CharactersPage from "../pages/CharactersPage.jsx"
+import BooksPage from "../pages/BooksPage.jsx";
 import SingleBookCard from "../components/SingleBookCard.jsx";
-import Movies  from "../pages/Movies.jsx";
+import MoviesPage  from "../pages/MoviesPage.jsx";
 import SingleMovieCard  from "../components/SingleMovieCard.jsx";
-import AllCharacters from "../pages/AllCharacters.jsx"
 import SpellsPage  from "../pages/SpellsPage.jsx";
 import HogwartsQuiz from "../pages/HogwartsQuiz.jsx"
 // import NotFound from "../pages/NotFound.jsx"
@@ -23,14 +23,14 @@ const AppRouter = createBrowserRouter([
 
       {
         path: "characters",
-        element: <AllCharacters />,
+        element: <CharactersPage />,
       },
       {
         path: "books",
         children: [
           {
             path: "",
-            element: <Books />
+            element: <BooksPage />
           },
           {
             path: ":id",
@@ -44,7 +44,7 @@ const AppRouter = createBrowserRouter([
         children: [
           {
             path: "",
-            element: <Movies />
+            element: <MoviesPage />
           },
           {
             path:":id",

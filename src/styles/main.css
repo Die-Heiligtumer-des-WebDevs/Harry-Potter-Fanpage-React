@@ -2,41 +2,66 @@ h1 {
   text-align: center;
 }
 
-.books-container {
-  border: blue solid;
-  display: flex;
-  flex-flow: row wrap;
-  flex-grow: 2;
-  justify-content: space-around;
-}
-.books-container .single-book-container {
-  border: solid rgb(255, 0, 0);
-  width: 250px;
+.books-page-container {
+  margin: 75px 0;
   display: flex;
   flex-direction: column;
-  margin: 5px;
+  justify-content: space-around;
 }
-.books-container .single-book-container:hover {
-  transform: scale(1.1);
+.books-page-container a {
+  outline: none;
+  text-decoration: none;
+  color: gold;
+}
+.books-page-container a:active {
+  color: white;
+}
+.books-page-container a:visited {
+  color: darkblue;
+}
+.books-page-container .books-page-small-container {
+  padding: 5px 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.books-page-container .books-page-small-container .books-page-single-container {
+  margin: 50px 15px;
+  border-radius: 5px;
+  border: solid 1px rgb(179, 172, 172);
+  width: 250px;
+}
+.books-page-container .books-page-small-container .books-page-single-container:hover img {
+  transform: scale(1.2);
   transition: 1s;
 }
-.books-container .single-book-container .book-content {
-  background-color: lightcoral;
-  display: flex;
-  flex-flow: column nowrap;
-}
-.books-container .single-book-container h3 {
+.books-page-container .books-page-small-container .books-page-single-container h2 {
+  text-align: center;
   height: 70px;
-  border: solid;
 }
-.books-container .single-book-container img {
-  width: 150px;
+.books-page-container .books-page-small-container .books-page-single-container div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.books-page-container .books-page-small-container .books-page-single-container div img {
+  width: 200px;
+  margin: 0 auto;
   object-fit: contain;
   align-self: center;
 }
 
+.single-book-container {
+  display: flex;
+  margin: 50px 0;
+}
+.single-book-container img {
+  width: 50px;
+}
+
 .allcharacters-container {
-  margin-top: 100px;
+  margin-top: 75;
 }
 
 .cards-container {
@@ -74,6 +99,7 @@ h1 {
   justify-content: space-evenly;
   flex-direction: column;
   color: white;
+  z-index: 2;
 }
 .footer-container a {
   text-decoration: none;
@@ -84,7 +110,6 @@ h1 {
   color: rgb(0, 0, 78);
 }
 .footer-container .icon {
-  color: gold;
   font-size: 1rem;
 }
 
@@ -112,32 +137,66 @@ h1 {
   color: gold;
 }
 
-.movies-container {
-  border: blue solid;
+.movies-page-container {
+  margin: 75px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.movies-page-container h1 {
+  text-align: center;
+  font-family: "Light";
+}
+.movies-page-container a {
+  outline: none;
+  text-decoration: none;
+  color: gold;
+}
+.movies-page-container a:active {
+  color: white;
+}
+.movies-page-container a:visited {
+  color: darkblue;
+}
+.movies-page-container .movies-page-small-container {
+  padding: 5px 50px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
 }
-.movies-container .single-movie-container {
-  border: solid rgb(255, 0, 0);
+.movies-page-container .movies-page-small-container .movies-page-single-container {
+  margin: 50px 15px;
+  border-radius: 5px;
+  border: solid 1px rgb(179, 172, 172);
   width: 250px;
-  display: flex;
-  flex-direction: column;
-  margin: 5px;
 }
-.movies-container .single-movie-container .movie-content {
-  background-color: lightcoral;
-  display: flex;
-  flex-flow: column nowrap;
+.movies-page-container .movies-page-small-container .movies-page-single-container:hover img {
+  transform: scale(1.2);
+  transition: 1s;
 }
-.movies-container .single-movie-container h3 {
+.movies-page-container .movies-page-small-container .movies-page-single-container h2 {
+  text-align: center;
   height: 70px;
-  border: solid;
 }
-.movies-container .single-movie-container img {
-  width: 150px;
+.movies-page-container .movies-page-small-container .movies-page-single-container div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.movies-page-container .movies-page-small-container .movies-page-single-container div img {
+  width: 200px;
+  margin: 0 auto;
   object-fit: contain;
   align-self: center;
+}
+
+.single-movie-container {
+  display: flex;
+  margin: 50px 0;
+}
+.single-movie-container img {
+  width: 50px;
 }
 
 * {

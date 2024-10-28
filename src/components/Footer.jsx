@@ -15,8 +15,8 @@ function Footer() {
       <div className="footer-container">
         <div className="footer-github">
           <p>
-            Created with <FaReact />, <IoMdGitBranch />/<LuBrainCircuit /> and{" "}
-            <FaHandHoldingHeart /> by 
+            Created with <FaReact />, <IoMdGitBranch /> and{" "}
+            <FaHandHoldingHeart /> by
             <strong> Die Heiligtümer des WebDevs</strong>
           </p>
         </div>

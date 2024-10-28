@@ -1,28 +1,20 @@
 import { AppContext } from "../utils/AppContext.jsx";
 import { useContext } from "react";
 import { useParams } from "react-router-dom";
+import MovieCard from "./MovieCard.jsx";
+import "../styles/main.scss";
 
 function SingleMovieCard() {
   const { id } = useParams();
   const { allMoviesData } = useContext(AppContext);
 
-  const singleMovie = allMoviesData.find((movie) => movie.id === id);
+  const singleMovieData = allMoviesData.find((movie) => movie.id === id);
 
   return (
-    <div key={id}>
-      {singleMovie ? (
+    <div key={id} className="single-movie-container">
+      {singleMovieData ? (
         <>
-          <h2>{singleMovie.title}</h2>
-          <img src={singleMovie.poster} alt={singleMovie.title} />
-          <p>{singleMovie.content}</p>
-          <p>{singleMovie.duration}</p>
-          <p>{singleMovie.language}</p>
-          <div className="single-book-card-footer">
-            <p>{singleMovie.director}</p>
-            <p>{singleMovie.releaseYear} </p>
-            <p>{singleMovie.boxOffice}</p>
-            <a href={singleMovie.shopLink}>Buy here</a>
-          </div>
+          <MovieCard key={singleMovieData.id} data={[singleMovieData]} />
         </>
       ) : (
         <p>Movie not found</p>

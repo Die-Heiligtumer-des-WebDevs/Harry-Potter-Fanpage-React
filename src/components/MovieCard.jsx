@@ -2,24 +2,40 @@
 /* eslint-disable react/jsx-key */
 
 import "../styles/main.scss";
-import { NavLink } from "react-router-dom";
 
 function MovieCard({ data }) {
   return (
     <>
       {data.map(
-        ({ id, title, director, releaseYear, genre, duration, poster }) => (
-          <NavLink to={`/single-movie/${id}`}>
-            <div key={id} className="single-movie-container">
-              <div className="movie-content"></div>
-              <h3>{title}</h3>
+        ({
+          id,
+          title,
+          director,
+          releaseYear,
+          genre,
+          duration,
+          poster,
+          language,
+          boxOffice,
+          shopLink,
+        }) => (
+          <div className="single-movie-container" key={id}>
+            <div className="movie-content">
+              <h2>{title}</h2>
               <img src={poster} alt={title} />
-              <p>Director: {director}</p>
-              <p>Release Year: {releaseYear}</p>
-              <p>Genre: {genre}</p>
-              <p>Duration: {duration} minutes</p>
+              <p>{genre}</p>
+              <p>Duration: {duration} min</p>
+              <p>Language: {language}</p>
+              <div className="single-book-card-footer">
+                <p>Director: {director}</p>
+                <p>Release Year: {releaseYear}</p>
+                <p>Box Office: {boxOffice}</p>
+                <a href={shopLink} target="_blank" rel="noopener noreferrer">
+                  Buy here
+                </a>
+              </div>
             </div>
-          </NavLink>
+          </div>
         )
       )}
     </>

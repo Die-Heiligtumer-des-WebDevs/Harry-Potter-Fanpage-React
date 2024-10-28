@@ -1,21 +1,32 @@
-import { useState, useEffect, useContext } from "react";
+import { useContext } from "react";
 
-import MovieCard from "../components/MovieCard.jsx";
-import "../styles/main.scss";
 import { AppContext } from "../utils/AppContext.jsx";
+import { NavLink } from "react-router-dom";
 
+import "../styles/main.scss";
 
-const Movies = () => {
- const { allMoviesData } = useContext(AppContext);
+const MoviesPage = () => {
+  const { allMoviesData } = useContext(AppContext);
 
   return (
     <>
-    <h1>Harry Potters Movies</h1>
-      <div className="movies-container">
-        <MovieCard key={allMoviesData.id} data={allMoviesData} />
+      <div className="movies-page-container">
+        <h1>Harry Potters Movies</h1>
+        <div className="movies-page-small-container">
+          {allMoviesData.map((movie) => (
+            <NavLink to={`/movies/${movie.id}`} key={movie.id}>
+              <div className="movies-page-single-container">
+                <h2>{movie.title}</h2>
+                <div>
+                  <img src={movie.poster} alt={movie.title} />
+                </div>
+              </div>
+            </NavLink>
+          ))}
+        </div>
       </div>
     </>
   );
 };
 
-export default Movies;
+export default MoviesPage;
