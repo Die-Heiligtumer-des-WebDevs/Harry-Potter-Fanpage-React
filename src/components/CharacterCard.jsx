@@ -3,9 +3,9 @@ import missedPicture from "../assets/missedPicture.png";
 function CharacterCard({ data }) {
   return (
     <>
-      <div className="students-container">
-        {data.map(({ id, name, image, alternate_names }) => (
-          <div key={id} className="single-student-container">
+      <div className="characters-container">
+        {data.map(({ id, name, house, alternate_names, image }) => (
+          <div key={id} className="single-character-container">
             <h3>{name}</h3>
             <img
               src={image ? image : missedPicture}
@@ -21,6 +21,7 @@ function CharacterCard({ data }) {
                 ? alternate_names[0]
                 : "I've got not alternate names :("}
             </p>
+            <p>{house}</p>
           </div>
         ))}
       </div>

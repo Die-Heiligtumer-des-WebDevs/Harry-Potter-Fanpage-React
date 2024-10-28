@@ -41,7 +41,7 @@ const AllCharacters = () => {
   const visibleData = filteredData.slice(0, visibleCount);
   return (
     <>
-      <div className="">
+      <div className="allcharacters-container">
         <h1>Find your favourite Hogwart People</h1>
         {/* <div>
           <button onClick={() => window.scroll({ bottom: -1 })}>

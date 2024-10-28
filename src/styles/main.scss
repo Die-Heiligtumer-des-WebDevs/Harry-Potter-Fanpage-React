@@ -1,9 +1,13 @@
+//import "../styles/main.scss"
+//use for every file _ before
 //import in gleicher Reihenfolge wie die scss-Dateien
 
-@import "./components/cards.scss";
+@import "./components/bookCard.scss";
+@import "./components/characterCard.scss";
 @import "./components/footer.scss";
+@import "./components/movieCard.scss";
 @import "./components/root.scss";
-@import "./components/searchoptions.scss";
+@import "./components/searchOptions.scss";
 @import "./components/harryPotterLogo.scss";
 @import "./components/navbar.scss";
 
@@ -14,6 +18,3 @@
     url("../font/HarryP-MVZ6w.ttf") format("truetype");
 }
 
-//import "../styles/main.scss"
-
-//use for every file _ before

@@ -1,0 +1,33 @@
+.allcharacters-container{
+  margin-top: 100px;
+}
+
+
+.cards-container {
+  border: solid black 5px;
+
+  .characters-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .single-character-container {
+    border: solid rgb(255, 0, 0);
+    min-height: 300px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    // &:hover img {
+    //   transform: scale(3);
+    //   transition: 1s;
+    // }
+    img {
+      width: 150px;
+      aspect-ratio: 1/1.4;
+    }
+  }
+}

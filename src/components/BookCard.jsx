@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */
-import "../styles/main.css";
+
+import "../styles/main.scss";
 import { NavLink } from "react-router-dom";
 
 function BookCard({ data }) {

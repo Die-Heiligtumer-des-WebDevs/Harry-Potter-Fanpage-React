@@ -6,10 +6,7 @@ function SingleMovieCard() {
   const { id } = useParams();
   const { allMoviesData } = useContext(AppContext);
 
-  const singleMovie = allMoviesData;
-//   .find(
-    // (movie) => movie.id === id
-//   );
+  const singleMovie = allMoviesData.find((movie) => movie.id === id);
 
   return (
     <div key={id}>
@@ -34,4 +31,4 @@ function SingleMovieCard() {
   );
 }
 
-export default SingleMovieCard
+export default SingleMovieCard;
