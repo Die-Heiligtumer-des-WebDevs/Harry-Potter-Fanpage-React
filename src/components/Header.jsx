@@ -24,7 +24,6 @@ const Header = () => {
                     <li>
                         <NavLink to="/characters">Characters</ NavLink>
                     </li>
-            
                     <li>
                         <NavLink to="/books">Books</ NavLink>
                     </li>
@@ -32,10 +31,10 @@ const Header = () => {
                         <NavLink to="/movies">Films</ NavLink>
                     </li>
                     <li>
-                        <NavLink to="/">Spells</ NavLink>
+                        <NavLink to="/spells">Spells</ NavLink>
                     </li>
                     <li>
-                        <NavLink to="/">Games</ NavLink>
+                        <NavLink to="/hogwarts-quiz">Games</ NavLink>
                     </li>
                     <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                         <FaTimes/>
