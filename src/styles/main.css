@@ -91,6 +91,36 @@ h1 {
   aspect-ratio: 1/1.4;
 }
 
+.footer-container {
+  height: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  background-color: lightblue;
+}
+.footer-container a {
+  text-decoration: none;
+  color: black;
+}
+.footer-container .icon {
+  color: gray;
+  font-size: 2rem;
+}
+.footer-container .footer-github {
+  border: solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 2rem;
+}
+.footer-container .footer-links {
+  border: solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  line-height: 3rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -112,3 +142,29 @@ h1 {
 .textfilter-container {
   border: red solid;
 }
+<<<<<<< HEAD
+
+.HPLogo {
+  width: 15vw;
+  height: auto;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+}
+.navbar ul li {
+  list-style: none;
+}
+.navbar ul li .socialMedia-box {
+  display: flex;
+  gap: 1vw;
+}
+.navbar ul li .socialMedia-icons {
+  width: 2.5vw;
+  height: auto;
+}/*# sourceMappingURL=main.css.map */
+=======
+>>>>>>> main
