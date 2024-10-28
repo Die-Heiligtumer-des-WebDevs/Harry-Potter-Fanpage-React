@@ -1,0 +1,29 @@
+.footer-container {
+  height: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  background-color: lightblue;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  .icon {
+    color: gray;
+    font-size: 2rem;
+  }
+  .footer-github {
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 2rem;
+  }
+  .footer-links {
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    line-height: 3rem;
+  }
+}

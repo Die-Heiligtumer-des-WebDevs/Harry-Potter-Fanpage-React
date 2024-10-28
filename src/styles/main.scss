@@ -1,16 +1,19 @@
 //import in gleicher Reihenfolge wie die scss-Dateien
 
-@import "./components/_cards.scss";
-@import "./components/_root.scss";
-@import "./components/_searchoptions.scss";
+@import "./components/cards.scss";
+@import "./components/footer.scss";
+@import "./components/root.scss";
+@import "./components/searchoptions.scss";
 @import "./components/harryPotterLogo.scss";
 @import "./components/navbar.scss";
+
 
 @font-face {
     font-family: "Light";
     src: local("HarryP-MVZ6w"), 
     url("../font/HarryP-MVZ6w.ttf") format("truetype");
 }
+
 //import "../styles/main.scss"
 
 //use for every file _ before

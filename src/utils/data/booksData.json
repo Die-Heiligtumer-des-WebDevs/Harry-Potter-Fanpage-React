@@ -1,3 +1,86 @@
+<<<<<<< HEAD
+{
+    "books": [
+        {
+            "title": "Harry Potter and the Philosopher's Stone",
+            "author": "J.K. Rowling",
+            "publicationYear": 1997,
+            "sales": 120000000,
+            "genre": "Fantasy",
+            "isbn": "978-0747532699",
+            "language": "English",
+            "pages": 223,
+            "cover": "https://www.wizardingworld.com/images/products/books/UK/rectangle-1.jpg"
+        },
+        {
+            "title": "Harry Potter and the Chamber of Secrets",
+            "author": "J.K. Rowling",
+            "publicationYear": 1998,
+            "sales": 77000000,
+            "genre": "Fantasy",
+            "isbn": "978-0747538493",
+            "language": "English",
+            "pages": 251,
+            "cover": "https://www.wizardingworld.com/images/products/books/UK/rectangle-2.jpg"
+        },
+        {
+            "title": "Harry Potter and the Prisoner of Azkaban",
+            "author": "J.K. Rowling",
+            "publicationYear": 1999,
+            "sales": 65000000,
+            "genre": "Fantasy",
+            "isbn": "978-0747542155",
+            "language": "English",
+            "pages": 317,
+            "cover": "https://www.wizardingworld.com/images/products/books/UK/rectangle-3.jpg"
+        },
+        {
+            "title": "Harry Potter and the Goblet of Fire",
+            "author": "J.K. Rowling",
+            "publicationYear": 2000,
+            "sales": 65000000,
+            "genre": "Fantasy",
+            "isbn": "978-0747546245",
+            "language": "English",
+            "pages": 636,
+            "cover": "https://www.wizardingworld.com/images/products/books/UK/rectangle-4.jpg"
+        },
+        {
+            "title": "Harry Potter and the Order of the Phoenix",
+            "author": "J.K. Rowling",
+            "publicationYear": 2003,
+            "sales": 65000000,
+            "genre": "Fantasy",
+            "isbn": "978-0747551003",
+            "language": "English",
+            "pages": 766,
+            "cover": "https://www.wizardingworld.com/images/products/books/UK/rectangle-5.jpg"
+        },
+        {
+            "title": "Harry Potter and the Half-Blood Prince",
+            "author": "J.K. Rowling",
+            "publicationYear": 2005,
+            "sales": 65000000,
+            "genre": "Fantasy",
+            "isbn": "978-0747581086",
+            "language": "English",
+            "pages": 607,
+            "cover": "https://www.wizardingworld.com/images/products/books/UK/rectangle-6.jpg"
+        },
+        {
+            "title": "Harry Potter and the Deathly Hallows",
+            "author": "J.K. Rowling",
+            "publicationYear": 2007,
+            "sales": 65000000,
+            "genre": "Fantasy",
+            "isbn": "978-0747595861",
+            "language": "English",
+            "pages": 607,
+            "cover": "https://www.wizardingworld.com/images/products/books/UK/rectangle-7.jpg"
+        }
+    ]
+}
+=======
 [
     {
         "id": "000000000009",
@@ -98,3 +181,4 @@
         "content": "Harry, Ron, and Hermione set out to find and destroy the remaining Horcruxes..."
     }
 ]
+>>>>>>> main
