@@ -22,16 +22,14 @@ const Header = () => {
                 <nav ref={navRef} className="navbar">
                 <ul>
                     <li>
-                        <NavLink to="/">Students</ NavLink>
+                        <NavLink to="/characters">Characters</ NavLink>
+                    </li>
+            
+                    <li>
+                        <NavLink to="/books">Books</ NavLink>
                     </li>
                     <li>
-                        <NavLink to="/">Staff</ NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/">Books</ NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/">Films</ NavLink>
+                        <NavLink to="/movies">Films</ NavLink>
                     </li>
                     <li>
                         <NavLink to="/">Spells</ NavLink>

@@ -1,29 +1,46 @@
 .footer-container {
-  height: 200px;
+  background-color: rgb(0, 0, 78);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
-  flex-direction: row;
-  background-color: lightblue;
+  flex-direction: column;
+  color: white;
   a {
     text-decoration: none;
-    color: black;
+    color: white;
+  }
+  a:active {
+    color: white;
+    color: rgb(0, 0, 78);
   }
   .icon {
-    color: gray;
-    font-size: 2rem;
+    color: gold;
+    font-size: 1rem;
   }
-  .footer-github {
-    border: solid;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    line-height: 2rem;
+}
+.footer-github,
+.footer-links {
+  width: 100%;
+  line-height: 2rem;
+  display: flex;
+}
+
+.footer-github {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    color: gold;
   }
-  .footer-links {
-    border: solid;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    line-height: 3rem;
+}
+.footer-links {
+  flex-direction: row;
+  justify-content: space-evenly;
+  a:hover {
+    color: gold;
   }
 }
