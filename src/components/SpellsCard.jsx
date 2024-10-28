@@ -41,7 +41,7 @@ const Spells = () => {
 
 
     return (
-      <div className="spells-container">
+      <div className="spells-container-home">
           {randomSpells.map((spell, index) => {
               
               return (
