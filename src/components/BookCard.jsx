@@ -9,7 +9,7 @@ function BookCard({ data }) {
     <>
       {data.map(
         ({ id, title, author, publicationYear, genre, pages, cover }) => (
-          <NavLink to={`/single-book/${id}`}>
+          <NavLink to={`/books/${id}`}>
             <div key={id} className="single-book-container">
               <div className="book-content">
                 <h3>{title}</h3>

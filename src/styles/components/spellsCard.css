@@ -1,10 +1,10 @@
-.spells-container {
+.spells-container-home {
     display: flex;
     justify-content: space-evenly;
     padding: 20px;
     gap: 1vw;
     max-width: 65vw;
-    margin: 0 auto;
+    margin: 0 auto 10vh;
 }
 
 .spell-card {
