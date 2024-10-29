@@ -34,12 +34,23 @@ function SearchOptions({
   }
   return (
     <>
+      {/* <Input variant="standard" color="indigo" label="Search by name" placeholder="Search by"/> */}
       <div className="textfilter-container">
+        <Checkbox
+          label="Teachers"
+          only={onlyTeachers}
+          setonly={setOnlyTeachers}
+        />
         <input
           type="text"
           value={filter}
           onChange={(e) => setFilter(e.target.value)}
           placeholder="Search by name"
+        />
+        <Checkbox
+          label="Students"
+          only={onlyStudents}
+          setonly={setOnlyStudents}
         />
       </div>
       <div className="checkfilter-container">
@@ -47,16 +58,6 @@ function SearchOptions({
         <Checkbox label="Gryffindor" only={onlyGry} setonly={setOnlyGry} />
         <Checkbox label="Ravenclaw" only={onlyRav} setonly={setOnlyRav} />
         <Checkbox label="Slytherin" only={onlySly} setonly={setOnlySly} />
-        <Checkbox
-          label="Teachers"
-          only={onlyTeachers}
-          setonly={setOnlyTeachers}
-        />
-        <Checkbox
-          label="Students"
-          only={onlyStudents}
-          setonly={setOnlyStudents}
-        />
       </div>
     </>
   );

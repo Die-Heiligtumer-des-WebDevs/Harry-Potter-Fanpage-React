@@ -1,12 +1,12 @@
 import { useState, useContext } from "react";
-import {AppContext} from "../utils/AppContext.jsx";
+import { AppContext } from "../utils/AppContext.jsx";
 
 import SearchOptions from "../components/SearchOptions.jsx";
 import CharacterCard from "../components/CharacterCard.jsx";
 
 import "../styles/main.css";
 
-const AllCharacters = () => {
+const Characters = () => {
   const [filter, setFilter] = useState("");
   const [visibleCount, setVisibleCount] = useState(25);
   const [onlyTeachers, setOnlyTeachers] = useState(false);
@@ -41,7 +41,7 @@ const AllCharacters = () => {
   const visibleData = filteredData.slice(0, visibleCount);
   return (
     <>
-      <div className="">
+      <div className="allcharacters-container">
         <h1>Find your favourite Hogwart People</h1>
         {/* <div>
           <button onClick={() => window.scroll({ bottom: -1 })}>
@@ -67,19 +67,23 @@ const AllCharacters = () => {
           />
         </div>
         <div className="cards-container">
-          <CharacterCard data={visibleData} />
-          <button onClick={() => setVisibleCount(visibleCount + 25)}>
-            Load more students...
-          </button>
-        </div>
-        <div>
-          <button onClick={() => window.scroll({ top: 0, behavior: "smooth" })}>
-            Jump to Top
-          </button>
+          {visibleData.map((character) => (
+            <CharacterCard key={character.id} data={character} />
+          ))}{" "}
+          <div className="button-container">
+            <button
+              onClick={() => window.scroll({ top: 0, behavior: "smooth" })}
+            >
+              Jump to Top
+            </button>
+            <button onClick={() => setVisibleCount(visibleCount + 25)}>
+              Load more students...
+            </button>
+          </div>
         </div>
       </div>
     </>
   );
 };
 
-export default AllCharacters;
+export default Characters;
