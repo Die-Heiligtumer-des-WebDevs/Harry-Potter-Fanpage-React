@@ -1,0 +1,21 @@
+.AllGames {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Quiz {
+    border: 2px solid black;
+    width: 10px;
+    height: 20px;
+
+}
+
+.Sortinghat {
+    border: 2px solid black;
+    width: 10px;
+    height: 20px;
+    background-image: url("../../assets/sprechender\ hut.png");
+}
