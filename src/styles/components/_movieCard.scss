@@ -16,12 +16,12 @@
   a {
     outline: none;
     text-decoration: none;
-    color: gold;
-    &:active {
-      color: white;
-    }
-    &:visited {
-      color: darkblue;
+    color: darkblue;
+    // &:visited {
+    //   color: darkblue;
+    // }
+    &:hover {
+      color: gold;
     }
   }
   .movies-page-small-container {
@@ -31,6 +31,7 @@
     justify-content: space-around;
 
     .movies-page-single-container {
+      background: rgba(0, 0, 0, 0.374);
       margin: 50px 15px;
       border-radius: 5px;
       border: solid 1px rgb(179, 172, 172);
