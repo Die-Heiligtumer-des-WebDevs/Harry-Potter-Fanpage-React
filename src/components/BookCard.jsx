@@ -22,22 +22,44 @@ function BookCard({ data }) {
           content,
         }) => (
           <div className="single-book-container" key={id}>
+            <h2>{title}</h2>
             <div className="book-content">
-              <h2>{title}</h2>
-              <img src={cover} alt={title} />
-              <p>{content}</p>
-              <p>{pages}</p>
-              <p>{genre}</p>
-              <p>{language}</p>
-              <div className="single-book-card-footer">
-                <p>{author}</p>
-                <p>{publicationYear} </p>
-                <p>{sales}</p>
-                <p>{isbn}</p>
-                <a href={shopLink} target="_blank">
-                  Buy here
-                </a>
+              <div>
+                <img src={cover} alt={title} />
+                <div>
+                  <p>
+                    <strong>Pages:</strong> {pages}
+                  </p>
+                  <p>
+                    <strong>Genre:</strong> {genre}
+                  </p>
+                  <p>
+                    <strong>Language:</strong> {language}
+                  </p>
+                  <p>
+                    <strong>Author:</strong> {author}
+                  </p>
+                  <p>
+                    <strong>Released on:</strong> {publicationYear}
+                  </p>
+                  <p>
+                    <strong>Sold so far:</strong> {sales} times
+                  </p>
+                  <p>
+                    <strong>ISBN:</strong> {isbn}
+                  </p>
+                  <p>
+                    <a href={shopLink} target="_blank">
+                      Buy here
+                    </a>
+                  </p>
+                </div>
               </div>
+              <div>
+                <p>About this book:</p>
+                <p>{content}</p>
+              </div>
+              <div></div>
             </div>
           </div>
         )

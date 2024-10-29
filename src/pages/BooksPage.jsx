@@ -17,9 +17,8 @@ const Books = () => {
             <NavLink to={`/books/${book.id}`}>
               <div className="books-page-single-container">
                 <h2>{book.title}</h2>
-                <div>
-                  <img src={book.cover} alt={book.title} />
-                </div>
+
+                <img src={book.cover} alt={book.title} />
               </div>
             </NavLink>
           ))}
