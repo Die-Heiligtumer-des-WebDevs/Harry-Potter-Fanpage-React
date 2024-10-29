@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from "react";
 import { AppContext } from "../utils/AppContext";
-import "../styles/components/Games.css"
-
+// import "../styles/components/Games.css"
+import "../styles/main.scss"
 const Games = () => {
 
 

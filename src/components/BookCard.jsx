@@ -22,7 +22,7 @@ function BookCard({ data }) {
           content,
         }) => (
           <div className="single-book-container" key={id}>
-            <h2>{title}</h2>
+            <h1>{title}</h1>
             <div className="book-content">
               <div>
                 <img src={cover} alt={title} />

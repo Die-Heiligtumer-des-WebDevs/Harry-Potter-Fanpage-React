@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'; // Importiere useNavigate für die Navigation
-import '../styles/components/HogwartsQuiz.css';
-
+// import '../styles/components/HogwartsQuiz.css';
+import "../styles/main.scss";
 
 
 // ich habe useNavigate auskommentiert, da der AppRouter noch nicht bereit ist. Nicht vergessen später useNavigate auszukommentieren.

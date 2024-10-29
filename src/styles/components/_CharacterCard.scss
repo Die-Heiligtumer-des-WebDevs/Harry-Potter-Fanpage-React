@@ -1,23 +1,31 @@
 //All Characters (Characters.jsx)
 .allcharacters-container {
-  padding: 80px 0px 60px;
   background-image: url(../assets/Bilder/MovieBackground.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  h1 {
-    color: white;
-  }
 
   .button-container {
     width: 100%;
     height: 100px;
     display: flex;
     justify-content: space-between;
-    // button {
-    //   height: 50px;
-    //   margin: 20px;
-    // }
+
+    button {
+      height: 50px;
+      margin: 20px;
+      background: black;
+      color: white;
+      border: none;
+      &:active {
+        color: darkblue;
+        background-color: gold;
+      }
+      &:hover {
+        color: gold;
+        background-color: darkblue;
+      }
+    }
   }
 }
 //Karte Container bei All-Characters
@@ -26,11 +34,7 @@
   flex-flow: row wrap;
   justify-content: space-around;
 
-  a {
-    text-decoration: none;
-    color: white;
-  }
-//Single Karte bei All-Characters
+  //Single Karte bei All-Characters
   .single-character-card-container {
     border: rgb(255, 255, 255) solid 1px;
     height: 175px;
@@ -58,10 +62,7 @@
       justify-content: space-evenly;
       align-items: center;
     }
-    // &:hover img {
-    //   transform: scale(3);
-    //   transition: 1s;
-    // }
+
     img {
       max-width: 75px;
       height: 75px;
@@ -71,8 +72,7 @@
   }
 }
 
-
 //SingleCharacterPage.jsx
-.single-character-container{
-  padding: 75px 50px;
+.single-character-container {
+background-color: gray;
 }

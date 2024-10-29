@@ -11,7 +11,7 @@ const Books = () => {
   return (
     <>
       <div className="books-page-container">
-        <h1>Harry Potters Books</h1>
+        <h1>Books</h1>
         <div className="books-page-small-container">
           {allBooksData.map((book) => (
             <NavLink to={`/books/${book.id}`}>

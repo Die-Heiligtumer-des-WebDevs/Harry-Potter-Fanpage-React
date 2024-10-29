@@ -25,7 +25,7 @@ function CharacterCard({ data }) {
           </figure>
 
           <div className="names">
-            <h3>{name}</h3>
+            <h1>{name}</h1>
 
             <p> ~ {house} ~ </p>
           </div>

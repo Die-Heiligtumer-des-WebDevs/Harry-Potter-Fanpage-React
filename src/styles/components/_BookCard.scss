@@ -1,9 +1,6 @@
 //ALL MOVIES
-h1 {
-  text-align: center;
-}
 .books-page-container {
-  margin: 75px 0;
+  background-color: gray;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -11,17 +8,6 @@ h1 {
   // background-size: cover;
   // background-repeat: no-repeat;
 
-  a {
-    outline: none;
-    text-decoration: none;
-    color: gold;
-    &:active {
-      color: white;
-    }
-    &:visited {
-      color: darkblue;
-    }
-  }
   .books-page-small-container {
     padding: 5px 50px;
     display: flex;
@@ -70,14 +56,14 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 75px 0;
+  background-color: gray;
   .book-content {
     padding-top: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     div:nth-child(1) {
-      background-color: gray;
+      background-color: lightgray;
       width: 400px;
       display: flex;
       flex-direction: row;
@@ -103,13 +89,6 @@ h1 {
         flex-direction: column;
         p {
           padding: 5px;
-          a {
-            text-decoration: none;
-            color: darkblue;
-            &:hover {
-              color: gold;
-            }
-          }
         }
       }
     }

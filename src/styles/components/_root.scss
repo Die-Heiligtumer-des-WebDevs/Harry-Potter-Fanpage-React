@@ -2,8 +2,41 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  }
+}
 
-:root{
+:root {
   position: relative;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  letter-spacing: 5px;
+  font-size: 2rem;
+  font-family: "Light", Arial, sans-serif;
+}
+
+.movies-page-container,
+.allcharacters-container,
+.books-page-container {
+  padding-top: 50px;
+}
+
+.single-movie-container,
+.single-character-container,
+.single-book-container {
+  margin-top: 50px;
+  a {
+    outline: none;
+    text-decoration: none;
+    &.hover {
+      color: gold;
+    }
+    &:visited {
+      color: darkblue;
+    }
+    &:active {
+      color: white;
+    }
+  }
 }

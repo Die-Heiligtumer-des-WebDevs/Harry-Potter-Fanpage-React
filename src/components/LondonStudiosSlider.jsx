@@ -2,8 +2,8 @@ import React from 'react';
 import { useRef } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import '../styles/components/londonStudiosSlide.scss'
-
+// import '../styles/components/londonStudiosSlide.scss'
+import "../styles/main.scss"
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';

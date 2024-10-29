@@ -1,4 +1,5 @@
-import "../styles/components/harryPotterLogo.scss"
+// import "../styles/components/harryPotterLogo.scss"
+import "../styles/main.scss"
 import logo from "../assets/harryPotterLogo/logo-gold.png";
 import {Link} from "react-router-dom"
 

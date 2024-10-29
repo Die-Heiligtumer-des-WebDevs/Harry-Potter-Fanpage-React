@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import fetchData from "../utils/fetchData";
-import "../styles/components/SpellsPageStyle.css";
+// import "../styles/components/SpellsPageStyle.css";
+import "../styles/main.scss";
 
 function SpellsPage() {
   const [spells, setSpells] = useState([]);
@@ -15,7 +16,9 @@ function SpellsPage() {
         setLoading(false);
       })
       .catch((e) => {
-        setError("Fehler beim Laden der Zaubersprüche. Bitte versuchen Sie es später erneut.");
+        setError(
+          "Fehler beim Laden der Zaubersprüche. Bitte versuchen Sie es später erneut."
+        );
         setLoading(false);
       });
 
