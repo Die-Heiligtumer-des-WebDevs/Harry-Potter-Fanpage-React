@@ -1,38 +1,35 @@
-/* Main page styling */
-.spells-page {
+/* Title styling */
+.zaubersprüche {
   font-family: 'Garamond', serif;
-  background-color: #282828;
-  color: #f0e68c;
-  text-align: center;
-  padding: 20px;
-  min-height: 100vh;
-  position: relative;
+  background-image: url("../../assets/Bilder/Download.png");
+  background-size: cover;
+  height: 100%;
+  overflow-x: hidden; /* Verhindert horizontales Scrollen */
 }
 
-/* Title styling */
+.spells-page {
+  padding: 20px;
+  min-height: 80vh; /* Ensures full screen height */
+}
+
 .title {
   font-size: 2.5rem;
   color: #d4af37;
   text-shadow: 2px 2px 4px #000;
-  margin-bottom: 20px;
-}
+ 
 
 /* Container for spells */
 .spells-container {
-  position: relative;
-  width: 100vw;
-  height: calc(100vh - 160px); /* Excludes header/footer */
-  overflow: hidden;
+  height: 85vh;
 }
-
 /* Spell element styling */
 .spell {
   font-size: 1.5rem;
-  color: #ffcc00;
+  color: gold;
   cursor: pointer;
   position: absolute;
   transition: transform 0.3s ease, font-size 0.3s ease;
-  animation: moveSpell 5s infinite; /* Adds floating animation */
+  animation: moveSpell 5s infinite;  
 }
 
 .spell:hover {
@@ -41,16 +38,18 @@
   color: #ff4500;
 }
 
+
 /* Animation keyframes for subtle floating effect */
+/* Active spell details popup */
+
 @keyframes moveSpell {
   0% { transform: translate(0, 0); }
-  25% { transform: translate(3px, -3px); }
-  50% { transform: translate(-3px, 3px); }
-  75% { transform: translate(2px, -2px); }
+  25% { transform: translate(-2%, 2%); }
+  50% { transform: translate(-4%, 4%); }
+  75% { transform: translate(6%, -6%); }
   100% { transform: translate(0, 0); }
 }
 
-/* Active spell details popup */
 .spell-details {
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
@@ -61,7 +60,6 @@
   transform: translate(-50%, 0);
   width: 300px;
   z-index: 10;
-  border-radius: 8px;
 }
 
 .spell-details button {
@@ -71,4 +69,24 @@
   padding: 10px;
   cursor: pointer;
   margin-top: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.spell-details button:hover {
+  background-color: #ffdf85;
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .title {
+      font-size: 1.8rem;
+  }
+  .spell {
+      font-size: 1.2rem;
+  }
+  .spell-details {
+      width: 90%;
+      top: 30%;
+  }
 }

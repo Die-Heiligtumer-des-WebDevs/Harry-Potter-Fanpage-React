@@ -18,7 +18,7 @@ const Header = () => {
         <header className="header"> 
             <SocialMedia className="socialMedia-icons" />
             <NavLink to="/"><HPLogo /></ NavLink>
-            <div>
+            <div className="headerNavbar">
                 <nav ref={navRef} className="navbar">
                 <ul>
                     <li>

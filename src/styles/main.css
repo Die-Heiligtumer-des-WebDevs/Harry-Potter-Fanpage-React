@@ -268,8 +268,7 @@ h1 {
 }
 
 .HPLogo {
-  width: 140px;
-  height: auto;
+  width: 220px;
 }
 
 .header {
@@ -279,21 +278,25 @@ h1 {
   width: 100%;
   padding: 10px;
   background: rgb(0, 0, 78);
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
   z-index: 100;
 }
 .header .socialMedia-box {
   display: flex;
-  gap: 5%;
+  gap: 2%;
 }
 .header .socialMedia-icons {
-  font-size: 1.5vw;
+  font-size: 32px;
   color: #fff;
 }
 .header .socialMedia-icons:hover {
   color: #8a8a8a;
+}
+.headerNavbar{
+  display: flex;
+  justify-content: flex-end;
 }
 .header .navbar ul {
   display: flex;
@@ -340,11 +343,20 @@ h1 {
   opacity: 0;
 }
 @media only screen and (max-width: 1024px) {
+  .header .socialMedia-icons {
+    font-size: 22px;
+  }
+
+  .HPLogo {
+    width: 160px;
+  }
+
   .header .nav-btn {
     visibility: visible;
     opacity: 1;
+    font-size: xx-large;
   }
-  .header nav {
+  .header .navbar {
     position: fixed;
     top: 0;
     left: 0;

@@ -2,7 +2,7 @@ import React from 'react';
 import { useRef } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import '../styles/components/londonStudiosSlide.css'
+import '../styles/components/londonStudiosSlide.scss'
 
 import 'swiper/css';
 import 'swiper/css/pagination';

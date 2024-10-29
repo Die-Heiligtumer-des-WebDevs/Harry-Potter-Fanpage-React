@@ -1,6 +1,6 @@
 import React, { useContext,useState, useEffect } from 'react';
 import { AppContext } from '../utils/AppContext'; 
-import '../styles/components/spellsCard.css'; 
+import '../styles/components/spellsCard.scss'; 
 
 import img1 from '../assets/spellsCardBackgroundImg/image1.jpg';
 import img2 from '../assets/spellsCardBackgroundImg/image2.webp';
@@ -45,7 +45,7 @@ const Spells = () => {
           {randomSpells.map((spell, index) => {
               
               return (
-                  <div key={index} className="spell-card" style={{ backgroundImage: `url(${shuffledImages[index]})` }}>
+                  <div key={index} className="spell-card-home" style={{ backgroundImage: `url(${shuffledImages[index]})` }}>
                       <div className="spell-overlay">
                           <h2>{spell.name}</h2>
                           <p>{spell.description}</p>
