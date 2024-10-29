@@ -14,7 +14,7 @@ function SingleCharacterCard({ data }) {
   const { name, house, alternate_names, image } = singleCharacterData;
   return (
     <>
-      <div className="characters-container">
+      <div className="single-character-container">
         <div key={id} className="single-character-container">
           <h3>{name}</h3>
           <img
@@ -31,6 +31,7 @@ function SingleCharacterCard({ data }) {
               : "I've got no alternate names :("}
           </p>
           <p>{house || "House information not available"}</p>
+       
         </div>
       </div>
     </>

@@ -19,30 +19,27 @@ const Characters = () => {
   const { allCharactersData } = useContext(AppContext);
 
   const filteredData = allCharactersData.filter((char) => {
-    const filterTeacher = onlyTeachers ? char.hogwartsStaff === true : true;
-    const filterStudent = onlyStudents ? char.hogwartsStudent === true : true;
-    const filterHuf = onlyHuf ? char.house === "Hufflepuff" : true;
-    const filterGry = onlyGry ? char.house === "Gryffindor" : true;
-    const filterRav = onlyRav ? char.house === "Ravenclaw" : true;
-    const filterSly = onlySly ? char.house === "Slytherin" : true;
-    // const filterHouse = filter.house
-    //   .toLowerCase()
-    //   .includes(filter);
-    // && filterHouse;
-    return (
-      filterTeacher &&
-      filterStudent &&
-      filterHuf &&
-      filterGry &&
-      filterRav &&
-      filterSly
-    );
+    const filterRole =
+      (!onlyTeachers && !onlyStudents) ||
+      (onlyTeachers && char.hogwartsStaff) ||
+      (onlyStudents && char.hogwartsStudent);
+
+    const filterHouse =
+      (!onlyHuf && !onlyGry && !onlyRav && !onlySly) || // Show all if no house filter is selected
+      (onlyHuf && char.house === "Hufflepuff") ||
+      (onlyGry && char.house === "Gryffindor") ||
+      (onlyRav && char.house === "Ravenclaw") ||
+      (onlySly && char.house === "Slytherin");
+
+    const filterNames = char.name.toLowerCase().includes(filter.toLowerCase());
+
+    return filterRole && filterHouse && filterNames;
   });
   const visibleData = filteredData.slice(0, visibleCount);
   return (
     <>
       <div className="allcharacters-container">
-        <h1>Find your favourite Hogwart People</h1>
+        <h1>Find People of Hogwarts Family</h1>
         {/* <div>
           <button onClick={() => window.scroll({ bottom: -1 })}>
             Jump to Bottom

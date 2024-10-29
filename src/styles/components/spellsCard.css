@@ -1,0 +1,71 @@
+.spells-container-home {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  gap: 1vw;
+  max-width: 65vw;
+  margin: 0 auto 10vh;
+}
+.spells-container-home .spell-card-home {
+  position: relative;
+  width: 12vw;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.spells-container-home .spell-card-home h2 {
+  font-size: 2vw;
+  margin: 0;
+}
+.spells-container-home .spell-card-home p {
+  font-size: 1vw;
+  margin: 5px 0 0;
+  overflow: auto;
+  text-overflow: ellipsis;
+}
+.spells-container-home .spell-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .spells-container-home {
+    max-width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .spells-container-home .spell-card-home {
+    width: 25vw;
+    height: 20vh;
+  }
+  .spells-container-home .spell-card-home h2 {
+    font-size: 4vw;
+  }
+  .spells-container-home .spell-card-home p {
+    font-size: 3vw;
+  }
+}
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(87, 87, 87, 0.497);
+  border-radius: 20px;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  border: 3px solid rgb(122, 122, 122);
+}/*# sourceMappingURL=spellsCard.css.map */
