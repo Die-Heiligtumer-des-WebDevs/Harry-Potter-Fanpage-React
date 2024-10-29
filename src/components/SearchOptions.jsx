@@ -34,24 +34,27 @@ function SearchOptions({
   }
   return (
     <>
-      {/* <Input variant="standard" color="indigo" label="Search by name" placeholder="Search by"/> */}
       <div className="textfilter-container">
-        <Checkbox
-          label="Teachers"
-          only={onlyTeachers}
-          setonly={setOnlyTeachers}
-        />
+        <span
+          className={`toggle-label ${onlyTeachers ? "active" : ""}`}
+          onClick={() => setOnlyTeachers(!onlyTeachers)}
+        >
+          Teachers family
+        </span>
+
         <input
-          type="text"
+          type="search"
           value={filter}
           onChange={(e) => setFilter(e.target.value)}
           placeholder="Search by name"
         />
-        <Checkbox
-          label="Students"
-          only={onlyStudents}
-          setonly={setOnlyStudents}
-        />
+
+        <span
+          className={`toggle-label ${onlyStudents ? "active" : ""}`}
+          onClick={() => setOnlyStudents(!onlyStudents)}
+        >
+          Students family
+        </span>
       </div>
       <div className="checkfilter-container">
         <Checkbox label="Hufflepuff" only={onlyHuf} setonly={setOnlyHuf} />
