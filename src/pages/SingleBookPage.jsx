@@ -1,7 +1,7 @@
 import { AppContext } from "../utils/AppContext.jsx";
 import { useContext } from "react";
 import { useParams } from "react-router-dom";
-import BookCard from "./BookCard.jsx";
+import BookCard from "../components/BookCard.jsx";
 
 function SingleBookCard() {
   const { id } = useParams();

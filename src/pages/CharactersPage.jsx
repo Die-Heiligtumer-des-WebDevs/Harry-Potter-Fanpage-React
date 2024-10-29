@@ -69,15 +69,17 @@ const Characters = () => {
         <div className="cards-container">
           {visibleData.map((character) => (
             <CharacterCard key={character.id} data={character} />
-          ))}
-          <button onClick={() => setVisibleCount(visibleCount + 25)}>
-            Load more students...
-          </button>
-        </div>
-        <div>
-          <button onClick={() => window.scroll({ top: 0, behavior: "smooth" })}>
-            Jump to Top
-          </button>
+          ))}{" "}
+          <div className="button-container">
+            <button
+              onClick={() => window.scroll({ top: 0, behavior: "smooth" })}
+            >
+              Jump to Top
+            </button>
+            <button onClick={() => setVisibleCount(visibleCount + 25)}>
+              Load more students...
+            </button>
+          </div>
         </div>
       </div>
     </>

@@ -3,11 +3,11 @@ import App from "../App";
 
 import HomePage from "../pages/HomePage.jsx";
 import CharactersPage from "../pages/CharactersPage.jsx";
-import SingleCharacterCard from "../components/SingleCharacterCard.jsx";
+import SingleCharacterPage from "../pages/SingleCharacterPage.jsx";
 import BooksPage from "../pages/BooksPage.jsx";
-import SingleBookCard from "../components/SingleBookCard.jsx";
+import SingleBookPage from "../pages/SingleBookPage.jsx";
 import MoviesPage from "../pages/MoviesPage.jsx";
-import SingleMovieCard from "../components/SingleMovieCard.jsx";
+import SingleMoviePage from "../pages/SingleMoviePage.jsx";
 import SpellsPage from "../pages/SpellsPage.jsx";
 import HogwartsQuiz from "../pages/HogwartsQuiz.jsx";
 // import NotFound from "../pages/NotFound.jsx"
@@ -31,7 +31,7 @@ const AppRouter = createBrowserRouter([
           },
           {
             path: ":id",
-            element: <SingleCharacterCard />,
+            element: <SingleCharacterPage />,
           },
         ],
       },
@@ -44,7 +44,7 @@ const AppRouter = createBrowserRouter([
           },
           {
             path: ":id",
-            element: <SingleBookCard />,
+            element: <SingleBookPage />,
           },
         ],
       },
@@ -58,7 +58,7 @@ const AppRouter = createBrowserRouter([
           },
           {
             path: ":id",
-            element: <SingleMovieCard />,
+            element: <SingleMoviePage />,
           },
         ],
       },
