@@ -34,7 +34,7 @@ const Header = () => {
                         <NavLink to="/spells">Spells</ NavLink>
                     </li>
                     <li>
-                        <NavLink to="/hogwarts-quiz">Games</ NavLink>
+                        <NavLink to="/games">Games</ NavLink>
                     </li>
                     <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                         <FaTimes/>
