@@ -11,7 +11,7 @@ const MoviesPage = () => {
   return (
     <>
       <div className="movies-page-container">
-        <h1>Harry Potters Movies</h1>
+        <h1>Movies</h1>
         <div className="movies-page-small-container">
           {allMoviesData.map((movie) => (
             <NavLink to={`/movies/${movie.id}`} key={movie.id}>

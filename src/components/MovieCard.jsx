@@ -21,7 +21,7 @@ function MovieCard({ data }) {
         }) => (
           <div className="single-movie-container" key={id}>
             <div className="movie-content">
-              <h2>{title}</h2>
+              <h1>{title}</h1>
               <img src={poster} alt={title} />
               <p>{genre}</p>
               <p>Duration: {duration} min</p>

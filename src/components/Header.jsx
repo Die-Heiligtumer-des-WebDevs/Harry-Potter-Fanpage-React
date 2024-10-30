@@ -1,14 +1,17 @@
-import { useRef } from "react"
-import { FaBars, FaTimes } from "react-icons/fa"
-import { NavLink } from "react-router-dom"
+import { useRef } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
-import SocialMedia from "./SocialMedialIcons.jsx"
-import HPLogo from "./HarryPotterLogo.jsx"
-import "../styles/components/navbar.scss"
-
+import SocialMedia from "./SocialMedialIcons.jsx";
+import HPLogo from "./HarryPotterLogo.jsx";
+// import "../styles/components/navbar.scss"
+import "../styles/main.scss";
 const Header = () => {
+  const navRef = useRef();
 
-    const navRef = useRef();
+  const showNavbar = () => {
+    navRef.current.classList.toggle("responsive_nav");
+  };
 
     const showNavbar = () => {
         navRef.current.classList.toggle('responsive_nav')
@@ -44,8 +47,13 @@ const Header = () => {
             <button className="nav-btn" onClick={showNavbar}>
                 <FaBars/>
             </button>
-            </div>
-        </header>
-    )
-}
+          </ul>
+        </nav>
+        <button className="nav-btn" onClick={showNavbar}>
+          <FaBars />
+        </button>
+      </div>
+    </header>
+  );
+};
 export default Header;

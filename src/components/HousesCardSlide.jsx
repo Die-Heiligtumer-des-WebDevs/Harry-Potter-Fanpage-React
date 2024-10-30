@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import '../styles/components/houseCard.scss';
-
+// import '../styles/components/houseCard.scss';
+import "../styles/main.scss";
 function HouseCardSlide() {
   const initialItems = [
     {
