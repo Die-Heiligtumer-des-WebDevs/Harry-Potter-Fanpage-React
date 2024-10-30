@@ -1,25 +1,23 @@
 import { useState, useEffect, useContext } from "react";
 import { AppContext } from "../utils/AppContext";
+import { NavLink } from "react-router-dom";
 // import "../styles/components/Games.css"
-import "../styles/main.scss"
+import "../styles/main.scss";
+
 const Games = () => {
+  return (
+    <div className="allgames">
 
+      <div className="quiz">
+      </div>
+<p>Quiz</p>
 
+      <div className="sortinghat">
+      
+      </div>
+      <p><NavLink to="/hogwarts-quiz">Hogwarts Quiz</NavLink></p>
 
-    return (
-        <>
-        <div className="AllGames">
-            <div className="Quiz">
-                <div className="games-image">
-
-                </div>
-            </div>
-            <div className="Memory"></div>
-            <div className="SortingHat"></div>
-        </div>
-        
-        </>
-    )
-}
-
+    </div>
+  );
+};
 export default Games;
