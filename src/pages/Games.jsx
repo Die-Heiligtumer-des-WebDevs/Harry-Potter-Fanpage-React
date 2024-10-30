@@ -16,7 +16,7 @@ const Games = () => {
       <div className="sortinghat">
       
       </div>
-      <p><NavLink to=":hogwarts-quiz">Hogwarts Quiz</NavLink></p>
+      <p><NavLink to="hogwarts-quiz">Hogwarts Quiz</NavLink></p>
 
     </div>
   );

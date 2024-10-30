@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'; // Importiere useNavigate für die Navigation
-// import '../styles/components/HogwartsQuiz.css';
 import "../styles/main.scss";
 
-
-// ich habe useNavigate auskommentiert, da der AppRouter noch nicht bereit ist. Nicht vergessen später useNavigate auszukommentieren.
 
 const HogwartsQuiz = () => {
   const [step, setStep] = useState(1); // Zustand für den aktuellen Schritt
@@ -15,7 +12,7 @@ const HogwartsQuiz = () => {
     Hufflepuff: 0
   });
   const [houseAssigned, setHouseAssigned] = useState(null); // Zustand für das zugewiesene Haus
-//   const navigate = useNavigate(); //  für Navigation
+  const navigate = useNavigate(); //  für Navigation
 
   const handleAnswer = (question, house, percentage) => {
     // Aktualisiere die Punktzahl für das ausgewählte Haus
@@ -44,20 +41,20 @@ const HogwartsQuiz = () => {
     setHouseAssigned(assignedHouse); // Zuweisung des Hauses
   };
 
-//   Automatische Weiterleitung zur Homepage nach 2 Sekunden
-//   useEffect(() => {
-//     if (houseAssigned) {
-//       const timer = setTimeout(() => {
-//         navigate('/home'); // Navigiere nach 2 Sekunden zur Homepage
-//       }, 2000);
+  // Automatische Weiterleitung zur Homepage nach 2 Sekunden
+  useEffect(() => {
+    if (houseAssigned) {
+      const timer = setTimeout(() => {
+        navigate('/'); // Navigiere nach 2 Sekunden zur Homepage
+      }, 2000);
 
-//       return () => clearTimeout(timer); // Timer bereinigen, wenn der Effekt endet
-//     }
-//   }, [houseAssigned, navigate]);
+      return () => clearTimeout(timer); // Timer bereinigen, wenn der Effekt endet
+    }
+  }, [houseAssigned, navigate]);
 
   const handleBackToHomepage = (e) => {
     e.preventDefault();
-    // navigate('/home'); // Navigiere zurück zur Homepage
+    navigate('/'); // Navigiere zurück zur Homepage
   };
 
   return (

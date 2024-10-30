@@ -75,11 +75,11 @@ const AppRouter = createBrowserRouter([
             element: <Games />,
           },
           {
-            path: ":hogwarts-quiz",
+            path: "hogwarts-quiz",
             element: <HogwartsQuiz />
           },
           {
-            path: ":quiz-game",
+            path: "quiz-game",
             element: <QuizGame />
           }
         ]
