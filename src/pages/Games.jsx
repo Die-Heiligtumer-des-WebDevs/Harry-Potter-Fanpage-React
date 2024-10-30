@@ -10,12 +10,13 @@ const Games = () => {
 
       <div className="quiz">
       </div>
-<p>Quiz</p>
+ <NavLink to={`/games/quiz-game`}>   Quiz Game   </NavLink>
+
 
       <div className="sortinghat">
       
       </div>
-      <p><NavLink to="/hogwarts-quiz">Hogwarts Quiz</NavLink></p>
+      <p><NavLink to=":hogwarts-quiz">Hogwarts Quiz</NavLink></p>
 
     </div>
   );

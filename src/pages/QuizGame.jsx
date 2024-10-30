@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import fragen from "../data/quizFragen.json";
+import fragen from "../utils/data/quizFragen.json";
 // import '../styles/components/quizGame.css';
 import "../styles/main.scss";
 import "../fonts/HarryP-MVZ6w.ttf";

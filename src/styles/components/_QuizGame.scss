@@ -1,5 +1,3 @@
-
-
 .allefragen {
     margin: 0;
     padding: 0;
@@ -8,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(1, 1, 85);
+    background-color: bisque;
     color: gold;
     font-family: 'Arial', sans-serif;
     background-size: cover;
@@ -19,12 +17,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    padding: 20px;
+    min-height: 10vh;
+    padding: 0px;
   }
   
   .quiz-box {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: beige;
     border: 2px solid gold;
     padding: 20px;
     width: 80%;
