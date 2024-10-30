@@ -12,17 +12,16 @@ h1 {
   text-align: center;
   color: white;
   letter-spacing: 5px;
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: "Light", Arial, sans-serif;
 }
 
 .movies-page-container,
-.allcharacters-container,
 .books-page-container {
-  padding-top: 50px;
+  padding: 50px 0px;
 }
 
-.single-movie-container,
+.allcharacters-container,.single-movie-container,
 .single-character-container,
 .single-book-container {
   margin-top: 50px;

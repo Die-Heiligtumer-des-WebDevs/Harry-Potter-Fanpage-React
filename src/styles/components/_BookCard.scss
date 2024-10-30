@@ -9,17 +9,14 @@
   // background-repeat: no-repeat;
 
   .books-page-small-container {
-    padding: 5px 50px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 
     .books-page-single-container {
-      margin: 50px 15px;
-      padding: 15px 0px;
-      border-radius: 5px;
-      border: solid 2px rgb(179, 172, 172);
       width: 250px;
+      border: solid 2px rgb(179, 172, 172);
+      border-radius: 5px;
       display: flex;
       flex-direction: column;
 

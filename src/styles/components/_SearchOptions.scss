@@ -1,20 +1,19 @@
 .filter-container {
-  padding: 5px;
+  margin: 25px;
   background-color: rgba(181, 181, 181, 0.391);
 }
 
 .textfilter-container {
-  margin: 5px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-[type="search"]{
-  height: 30px;
-  width: 50%;
-  outline: none;
-  border-radius: 15px;
-  padding-left: 10px;
-}
+  [type="search"] {
+    height: 30px;
+    width: 50%;
+    outline: none;
+    border-radius: 15px;
+    padding-left: 10px;
+  }
   .toggle-label {
     font-weight: bold;
     cursor: pointer;
