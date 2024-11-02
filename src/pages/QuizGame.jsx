@@ -7,27 +7,11 @@ import "../fonts/HarryP-MVZ6w.ttf";
 const QuizGame = () => {
   const [aktuelleFrageIndex, setAktuelleFrageIndex] = useState(0);
   const [punkte, setPunkte] = useState(0);
-  const [highscore, setHighscore] = useState(() => {
-    return parseInt(localStorage.getItem("highscore"), 10) || 0;
-  });
   const [feedback, setFeedback] = useState(null);
+  const [questionCount, setQuestionCount] = useState(1)
 
   // Highscore speichern, wenn es aktualisiert wird
-  useEffect(() => {
-    if (punkte > highscore) {
-      setHighscore(punkte);
-      localStorage.setItem("highscore", punkte);
-    }
-  }, [punkte, highscore]);
-
-  // Quiz zurücksetzen nach 10 Fragen
-  useEffect(() => {
-    if (aktuelleFrageIndex === fragen.length) {
-      setHighscore(0);
-      localStorage.setItem("highscore", 0);
-    }
-  }, [aktuelleFrageIndex]);
-
+  
   const handleAntwort = (option) => {
     const istKorrekt = option === fragen[aktuelleFrageIndex].answer;
 
@@ -41,6 +25,9 @@ const QuizGame = () => {
     } else {
       setFeedback("Falsch, versuche es erneut.");
     }
+
+    setQuestionCount(questionCount + 1);
+
   };
 
   return (
@@ -48,7 +35,7 @@ const QuizGame = () => {
       <div className="quiz-container">
         <div className="quiz-box">
           <h2>Harry Potter Quiz</h2>
-          <p>Highscore: {highscore}</p>
+          
           {aktuelleFrageIndex < fragen.length ? (
             <>
               <h3>{fragen[aktuelleFrageIndex].question}</h3>
@@ -63,16 +50,16 @@ const QuizGame = () => {
                   </button>
                 ))}
               </div>
+              <div className="questionCount"> Frage {questionCount} von 10</div>
               {feedback && <p className="feedback">{feedback}</p>}
             </>
           ) : (
             <div className="result">
               <h3>Quiz abgeschlossen!</h3>
-              <p>Deine Punktzahl: {punkte}</p>
+             
               <button
                 onClick={() => {
                   setAktuelleFrageIndex(0);
-                  setPunkte(0);
                 }}
               >
                 Quiz neu starten
