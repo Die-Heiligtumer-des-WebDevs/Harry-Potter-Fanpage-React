@@ -383,9 +383,8 @@ h1 {
   width: 1.5rem;
 }
 
-.HPLogo {
-  width: 140px;
-  height: auto;
+/* .HPLogo {
+  width: 200px;
 }
 
 .header {
@@ -396,13 +395,13 @@ h1 {
   padding: 10px;
   background: rgb(0, 0, 78);
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns:auto 1fr auto;
   align-items: center;
   z-index: 100;
 }
 .header .socialMedia-box {
   display: flex;
-  gap: 10%;
+  gap: 2%;
 }
 .header .socialMedia-icons {
   font-size: 32px;
@@ -460,6 +459,11 @@ h1 {
   display: none;
 }
 @media only screen and (max-width: 1024px) {
+  
+  .header .socialMedia-icons {
+      font-size: 16px;
+  }
+
   .header .nav-btn {
     display: block;
   }
@@ -486,7 +490,7 @@ h1 {
   .header .responsive_nav {
     transform: none;
   }
-}
+} */
 
 @font-face {
   font-family: "Light";

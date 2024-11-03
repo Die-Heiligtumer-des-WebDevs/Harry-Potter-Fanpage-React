@@ -4,7 +4,7 @@
   padding: 20px;
   gap: 1vw;
   max-width: 65vw;
-  margin: 0 auto 10vh;
+  margin: 4vh auto 17vh;
 
   .spell-card-home {
     position: relative;
@@ -43,7 +43,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 916px) {
   .spells-container-home {
     max-width: 70vw;
     display: flex;

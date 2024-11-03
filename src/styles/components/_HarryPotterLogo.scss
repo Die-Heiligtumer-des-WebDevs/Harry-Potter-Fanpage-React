@@ -1,4 +1,16 @@
 .HPLogo {
-    width: 140px;
+    width: 200px;
     height: auto;
+}
+
+@media only screen and (max-width: 1024px) {
+    .HPLogo {
+        width: 160px;
+      }
+}
+
+@media only screen and (max-width: 460px) {
+    .HPLogo {
+        width: 120px;
+      }
 }

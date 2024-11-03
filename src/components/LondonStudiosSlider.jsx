@@ -28,7 +28,6 @@ const LondonStudiosSlider = () => {
         return (
           <>
             <div>
-                <h1 className='LondonStudioH1'>London Studios</h1>
                     <Swiper
                       spaceBetween={30}
                       centeredSlides={true}
