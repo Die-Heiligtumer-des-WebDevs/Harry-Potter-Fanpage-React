@@ -92,7 +92,7 @@ const QuizGame = () => {
       </div>
       <div className="back-button-container">
         <button className="back-button" onClick={handleBackToGames}>
-          Zurück zur Games
+          Zurück zu Games
         </button>
       </div>
     </div>

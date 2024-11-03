@@ -42,19 +42,23 @@ const Spells = () => {
 
 
     return (
-      <div className="spells-container-home">
-          {randomSpells.map((spell, index) => {
-              
-              return (
-                  <div key={index} className="spell-card-home" style={{ backgroundImage: `url(${shuffledImages[index]})` }}>
-                      <div className="spell-overlay">
-                          <h2>{spell.name}</h2>
-                          <p>{spell.description}</p>
-                      </div>
-                  </div>
-              );
-          })}
-      </div>
+        <>
+            <div className='spellsCard-Container-home'>
+                <h1 style={{color: 'black', marginTop: '8vh', fontSize: '6vw'}}>Spells of the Day</h1>
+                    <div className="spells-container-home">
+                        {randomSpells.map((spell, index) => { 
+                            return (
+                                <div key={index} className="spell-card-home" style={{ backgroundImage: `url(${shuffledImages[index]})` }}>
+                                    <div className="spell-overlay">
+                                        <h2>{spell.name}</h2>
+                                        <p>{spell.description}</p>
+                                    </div>
+                                </div>
+                            );
+                        })}
+                    </div>
+            </div>
+      </>
   );
 };
 

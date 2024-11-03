@@ -108,7 +108,7 @@ const HogwartsQuiz = () => {
 
       <div className="back-button-container">
         <button className="back-button" onClick={handleBackToHomepage}>
-          Zurück zur Games
+          Zurück zu Games
         </button>
       </div>
     </div>

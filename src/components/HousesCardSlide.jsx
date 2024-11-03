@@ -44,24 +44,26 @@ function HouseCardSlide() {
 
   return (
     <>
-      <div className="slide">
-        {items.map((item, index) => (
-          <div
-            key={index}
-            className="item"
-            style={{ backgroundImage: `url(${item.imageUrl})` }}
-          >
-            <div className="content">
-              <h3 className='name'>{item.name}</h3>
-              <p className='des'>{item.description}</p>
-              {/* <button>See More</button> */}
+    <div className="houseCardContainer">
+        <div className="slide">
+          {items.map((item, index) => (
+            <div
+              key={index}
+              className="item"
+              style={{ backgroundImage: `url(${item.imageUrl})` }}
+            >
+              <div className="content">
+                <h3 className='name'>{item.name}</h3>
+                <p className='des'>{item.description}</p>
+                {/* <button>See More</button> */}
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-      <div className="button">
-        <button className="prev" onClick={prevSlide}><FaArrowLeft /></button>
-        <button className="next" onClick={nextSlide}><FaArrowRight /></button>
+          ))}
+        </div>
+        <div className="button">
+          <button className="prev" onClick={prevSlide}><FaArrowLeft /></button>
+          <button className="next" onClick={nextSlide}><FaArrowRight /></button>
+        </div>
       </div>
     </>
   );

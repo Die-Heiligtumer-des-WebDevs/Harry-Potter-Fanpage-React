@@ -7,13 +7,10 @@ const HomePage = () => {
     return (
         <>
         <Header />
-        <h1 style={{color: 'black', marginTop: '16vh', fontSize: '6vw'}}>Hogwarts Houses</h1>
-        <div className="houseCardContainer">
+        <h1 style={{color: 'black',paddingTop: '12vh', fontSize: '6vw'}}>Hogwarts Houses</h1>
         <HouseCardSlide />
-        </div>
         <h1 style={{color: 'black', marginTop: '8vh', fontSize: '6vw'}}>London Studios</h1>
         <LondonStudiosSlider />
-        <h1 style={{color: 'black', marginTop: '8vh', fontSize: '6vw'}}>Spells of the Day</h1>
         <Spells />
         </>
     )
