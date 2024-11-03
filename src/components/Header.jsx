@@ -23,19 +23,19 @@ const Header = () => {
         <nav ref={navRef} className="navbar">
           <ul>
             <li>
-              <NavLink to="/characters">Characters</NavLink>
+              <NavLink to="/characters" onClick={showNavbar}>Characters</NavLink>
             </li>
             <li>
-              <NavLink to="/books">Books</NavLink>
+              <NavLink to="/books" onClick={showNavbar}>Books</NavLink>
             </li>
             <li>
-              <NavLink to="/movies">Films</NavLink>
+              <NavLink to="/movies" onClick={showNavbar}>Films</NavLink>
             </li>
             <li>
-              <NavLink to="/spells">Spells</NavLink>
+              <NavLink to="/spells" onClick={showNavbar}>Spells</NavLink>
             </li>
             <li>
-              <NavLink to="/games">Games</NavLink>
+              <NavLink to="/games" onClick={showNavbar}>Games</NavLink>
             </li>
           </ul>
           <button className="nav-btn nav-close-btn" onClick={showNavbar}>

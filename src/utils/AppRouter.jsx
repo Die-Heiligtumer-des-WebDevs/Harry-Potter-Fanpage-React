@@ -11,6 +11,7 @@ import SingleMoviePage from "../pages/SingleMoviePage.jsx";
 import SpellsPage from "../pages/SpellsPage.jsx";
 import HogwartsQuiz from "../pages/HogwartsQuiz.jsx";
 import Games from "../pages/Games.jsx"
+import QuizGame from "../pages/QuizGame.jsx";
 // import NotFound from "../pages/NotFound.jsx"
 
 const AppRouter = createBrowserRouter([
@@ -74,8 +75,12 @@ const AppRouter = createBrowserRouter([
             element: <Games />,
           },
           {
-            path: ":hogwarts-quiz",
+            path: "hogwarts-quiz",
             element: <HogwartsQuiz />
+          },
+          {
+            path: "quiz-game",
+            element: <QuizGame />
           }
         ]
         

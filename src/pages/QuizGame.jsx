@@ -1,46 +1,54 @@
-import React, { useState, useEffect } from "react";
-import fragen from "../data/quizFragen.json";
-// import '../styles/components/quizGame.css';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
+import fragen from "../utils/data/quizFragen.json";
 import "../styles/main.scss";
 import "../fonts/HarryP-MVZ6w.ttf";
 
 const QuizGame = () => {
   const [aktuelleFrageIndex, setAktuelleFrageIndex] = useState(0);
   const [punkte, setPunkte] = useState(0);
-  const [highscore, setHighscore] = useState(() => {
-    return parseInt(localStorage.getItem("highscore"), 10) || 0;
-  });
   const [feedback, setFeedback] = useState(null);
+  const [questionCount, setQuestionCount] = useState(1);
+  const [correctAnswers, setCorrectAnswers] = useState(0);
+  const [incorrectAnswers, setIncorrectAnswers] = useState(0);
+  const navigate = useNavigate();
 
-  // Highscore speichern, wenn es aktualisiert wird
-  useEffect(() => {
-    if (punkte > highscore) {
-      setHighscore(punkte);
-      localStorage.setItem("highscore", punkte);
-    }
-  }, [punkte, highscore]);
-
-  // Quiz zurücksetzen nach 10 Fragen
-  useEffect(() => {
-    if (aktuelleFrageIndex === fragen.length) {
-      setHighscore(0);
-      localStorage.setItem("highscore", 0);
-    }
-  }, [aktuelleFrageIndex]);
+  const handleBackToGames = (e) => {
+    e.preventDefault();
+    navigate("/games");
+  };
 
   const handleAntwort = (option) => {
     const istKorrekt = option === fragen[aktuelleFrageIndex].answer;
 
     if (istKorrekt) {
       setPunkte(punkte + 1);
+      setCorrectAnswers(correctAnswers + 1);
       setFeedback("Richtig!");
-      setTimeout(() => {
-        setAktuelleFrageIndex(aktuelleFrageIndex + 1);
-        setFeedback(null);
-      }, 1000);
     } else {
-      setFeedback("Falsch, versuche es erneut.");
+      setIncorrectAnswers(incorrectAnswers + 1);
+      setFeedback("Leider falsch");
     }
+
+    setTimeout(() => {
+        setAktuelleFrageIndex(aktuelleFrageIndex + 1);
+        if (aktuelleFrageIndex < fragen.length) {
+          setQuestionCount(questionCount + 1);
+        } else {
+          // End of quiz reached
+        setFeedback(null);
+        }
+    }, 1000);
+  };
+
+  const handleRestartQuiz = () => {
+    setAktuelleFrageIndex(0);
+    setPunkte(0);
+    setQuestionCount(1);
+    setFeedback(null);
+    setCorrectAnswers(0);
+    setIncorrectAnswers(0);
   };
 
   return (
@@ -48,7 +56,7 @@ const QuizGame = () => {
       <div className="quiz-container">
         <div className="quiz-box">
           <h2>Harry Potter Quiz</h2>
-          <p>Highscore: {highscore}</p>
+
           {aktuelleFrageIndex < fragen.length ? (
             <>
               <h3>{fragen[aktuelleFrageIndex].question}</h3>
@@ -63,23 +71,29 @@ const QuizGame = () => {
                   </button>
                 ))}
               </div>
+              <div className="questionCount">
+                Frage {questionCount} von {fragen.length}
+              </div>
               {feedback && <p className="feedback">{feedback}</p>}
             </>
           ) : (
             <div className="result">
               <h3>Quiz abgeschlossen!</h3>
-              <p>Deine Punktzahl: {punkte}</p>
-              <button
-                onClick={() => {
-                  setAktuelleFrageIndex(0);
-                  setPunkte(0);
-                }}
-              >
-                Quiz neu starten
+              <p>Du hast {punkte} von {fragen.length} Punkten erreicht.</p>
+              <p>Korrekte Antworten: {correctAnswers}</p>
+              <p>Falsche Antworten: {incorrectAnswers}</p>
+              <p>Möchtest du das Quiz wiederholen?</p>
+              <button className="round-restart-button" onClick={handleRestartQuiz}>
+                ⟳ Quiz neu starten
               </button>
             </div>
           )}
         </div>
+      </div>
+      <div className="back-button-container">
+        <button className="back-button" onClick={handleBackToGames}>
+          Zurück zu Games
+        </button>
       </div>
     </div>
   );

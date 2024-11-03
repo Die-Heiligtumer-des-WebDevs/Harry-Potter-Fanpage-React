@@ -1,21 +1,46 @@
-.AllGames {
-    margin: 0;
-    padding: 0;
+.allgames {
+  // background-color: rgb(240, 240, 196);
+  background-image: url("../assets/thumb-1920-1353023.png");
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  margin-top: 8vh;
+
+  .quiz-container1 {
+    flex: 1;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    padding-top: 10%;
     align-items: center;
-}
+    gap: 2rem;
 
-.Quiz {
-    border: 2px solid black;
-    width: 10px;
-    height: 20px;
+    .quiz {
+      background-image: url("../assets/Hogwats.png");
+      background-size: 150px;
+      width: 150px;
+      height: 150px;
+      border-radius: 10px;
+    }
+  }
 
-}
+  .sortinghat-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    align-items: center;
+    gap: 2rem;
+    
+    .sortinghat {
+      background-image: url("../assets/sprechenderHut.png");
+      background-size: 175px;
 
-.Sortinghat {
-    border: 2px solid black;
-    width: 10px;
-    height: 20px;
-    background-image: url("../../assets/sprechender\ hut.png");
+      width: 150px;
+      height: 150px;
+      border-radius: 10px;
+      // animation: 3s ease-in 1s infinite reverse both running slidein;
+    }
+  }
 }
