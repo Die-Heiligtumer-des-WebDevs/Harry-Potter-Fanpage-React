@@ -12,34 +12,35 @@
 
   .socialMedia-box {
     display: flex;
-    gap: 10%;
+    gap: 2%;
   }
 
   .socialMedia-icons {
     font-size: 32px;
-
     color: #fff;
+
     &:hover {
       color: #8a8a8a;
     }
   }
 
-  .navbar {
+  .headerNavbar {
     display: flex;
     justify-content: flex-end;
+
     ul {
       display: flex;
       list-style: none;
-      margin: 0;
+      margin-right: 1vw;
       padding: 0;
       justify-content: center;
+      gap: 2%;
 
       li {
         position: relative;
         font-size: 1.2rem;
         color: #fff;
         font-weight: 500;
-        margin-left: 10px;
 
         &::before {
           content: "";
@@ -80,6 +81,10 @@
   }
 
   @media only screen and (max-width: 1024px) {
+    .socialMedia-icons {
+      font-size: 22px;
+    }
+
     .nav-btn {
       display: block;
     }
@@ -98,7 +103,7 @@
       background-color: rgba(0, 0, 78, 0.95);
       transition: 1s;
       transform: translateY(-100vh);
-  
+
       ul {
         display: flex;
         flex-direction: column;
@@ -108,6 +113,12 @@
 
     .responsive_nav {
       transform: none;
+    }
+  }
+
+  @media only screen and (max-width: 460px) {
+    .socialMedia-icons {
+      font-size: 16px;
     }
   }
 }
