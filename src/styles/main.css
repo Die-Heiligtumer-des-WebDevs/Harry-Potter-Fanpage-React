@@ -1,22 +1,24 @@
 @charset "UTF-8";
 .books-page-container {
-  background-color: gray;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: center;
   background-image: url(../assets/Bilder/books-2596809_1280.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .books-page-container h1 {
   background-color: rgb(0, 0, 74);
-  margin: 0px 400px;
   padding: 15px;
   border-radius: 50px;
+  margin: 0px 15px;
 }
 .books-page-container .books-page-small-container {
+  margin: 0px 100px;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
-  padding: 5px 150px;
+  justify-content: center;
+  padding: 5px 100px;
 }
 .books-page-container .books-page-small-container a {
   text-decoration: none;
@@ -31,7 +33,7 @@
   color: gold;
 }
 .books-page-container .books-page-small-container .books-page-single-container {
-  width: 250px;
+  width: 450px;
   border: solid 2px rgb(179, 172, 172);
   border-radius: 5px;
   display: flex;
@@ -711,10 +713,9 @@ button:hover {
 }
 .movies-page-container h1 {
   background-color: rgb(0, 0, 74);
-  margin: 0px 625px;
   padding: 15px;
   border-radius: 50px;
-  margin: 0px 400px;
+  margin: 0px 15px;
 }
 .movies-page-container .movies-page-small-container {
   padding: 5px 150px;
@@ -1088,6 +1089,9 @@ h2 {
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
+}
+.checkfilter-container .single-checkfilter-container input[type=checkbox] {
+  margin: 5px;
 }
 
 .spells-container-home {
