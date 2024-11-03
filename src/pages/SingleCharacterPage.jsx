@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { AppContext } from "../utils/AppContext.jsx";
 
-import missedPicture from "../assets/missedPicture.png";
+import missedPicture from "../assets/Bilder/missedPicture.png";
 
 function SingleCharacterCard({ data }) {
   const { id } = useParams();

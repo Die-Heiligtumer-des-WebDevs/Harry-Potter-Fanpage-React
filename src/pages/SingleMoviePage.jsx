@@ -19,6 +19,16 @@ function SingleMovieCard() {
       ) : (
         <p>Movie not found</p>
       )}
+      <div>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/watch?v=VyHV0BRtdxo"
+          frameborder="0"
+          allow="autoplay"
+          allowfullscreen
+        ></iframe>
+      </div>
     </div>
   );
 }

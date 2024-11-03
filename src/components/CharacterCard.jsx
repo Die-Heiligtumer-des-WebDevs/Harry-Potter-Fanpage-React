@@ -1,4 +1,4 @@
-import missedPicture from "../assets/missedPicture.png";
+import missedPicture from "../assets/Bilder/missedPicture.png";
 import { NavLink } from "react-router-dom";
 
 function CharacterCard({ data }) {
@@ -25,8 +25,7 @@ function CharacterCard({ data }) {
           </figure>
 
           <div className="names">
-            <h1>{name}</h1>
-
+            <h2>{name}</h2>
             <p> ~ {house} ~ </p>
           </div>
         </div>

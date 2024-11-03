@@ -29,7 +29,7 @@ const Header = () => {
               <NavLink to="/books" onClick={showNavbar}>Books</NavLink>
             </li>
             <li>
-              <NavLink to="/movies" onClick={showNavbar}>Films</NavLink>
+              <NavLink to="/movies" onClick={showNavbar}>Movies</NavLink>
             </li>
             <li>
               <NavLink to="/spells" onClick={showNavbar}>Spells</NavLink>
