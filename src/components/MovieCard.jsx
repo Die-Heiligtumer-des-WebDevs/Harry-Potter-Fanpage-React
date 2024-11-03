@@ -24,10 +24,11 @@ function MovieCard({ data }) {
           language,
           boxOffice,
           shopLink,
+          src
         }) => (
           <div className="single-movie-container" key={id}>
             <button onClick={handleBackToMovies}>Go back</button>
-            <h1>{title}</h1>{" "}
+            <h1>{title}</h1>
             <div className="movie-content">
               <div>
                 <img src={poster} alt={title} />
@@ -47,7 +48,8 @@ function MovieCard({ data }) {
                 <iframe
                   width="560"
                   height="315"
-                  src="https://www.youtube.com/embed/VyHV0BRtdxo"
+                  src={src}
+                  loading="eager"
                   // allow="autoplay"
                   // allowfullscreen
                 ></iframe>

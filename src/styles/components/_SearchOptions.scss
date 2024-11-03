@@ -29,7 +29,7 @@
     }
 
     &:hover {
-      background-color: #00005c; 
+      background-color: #00005c;
       color: #fff;
     }
   }
@@ -38,6 +38,7 @@
 .checkfilter-container {
   display: flex;
   justify-content: space-evenly;
+
   .single-checkfilter-container {
     width: 250px;
     height: 50px;
@@ -45,9 +46,5 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    [type="checkbox"] {
-      height: 1.5rem;
-      width: 1.5rem;
-    }
   }
 }

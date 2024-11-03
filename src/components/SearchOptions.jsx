@@ -20,13 +20,14 @@ function SearchOptions({
     return (
       <>
         <div className="single-checkfilter-container">
-          <label htmlFor="checkbox">
-            {label} family
+          <label className="checkbox-control" htmlFor="checkbox">
             <input
               type="checkbox"
+              name="checkbox"
               checked={only}
               onChange={(e) => setonly(e.target.checked)}
             />
+            {label} family
           </label>
         </div>
       </>
