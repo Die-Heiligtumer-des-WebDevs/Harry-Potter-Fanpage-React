@@ -79,19 +79,19 @@ button:hover {
 .back-button {
   background-color: #79150e;
   color: white;
-  width: 90px;       // Set equal width and height
+  width: 90px;       
   height: 90px;
-  border-radius: 50%; // Make it a circle
+  border-radius: 50%; 
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;  // Adjust font size as needed
+  font-size: 1.2rem;  
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .back-button:hover {
-  background-color: #d32f2f; // Darker shade on hover
+  background-color: #d32f2f; 
 }
 
 
