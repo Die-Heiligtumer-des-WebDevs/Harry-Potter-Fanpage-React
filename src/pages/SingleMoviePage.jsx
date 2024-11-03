@@ -11,7 +11,7 @@ function SingleMovieCard() {
   const singleMovieData = allMoviesData.find((movie) => movie.id === id);
 
   return (
-    <div key={id} className="single-movie-container">
+    <div key={id}>
       {singleMovieData ? (
         <>
           <MovieCard key={singleMovieData.id} data={[singleMovieData]} />
@@ -19,16 +19,6 @@ function SingleMovieCard() {
       ) : (
         <p>Movie not found</p>
       )}
-      <div>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/watch?v=VyHV0BRtdxo"
-          frameborder="0"
-          allow="autoplay"
-          allowfullscreen
-        ></iframe>
-      </div>
     </div>
   );
 }

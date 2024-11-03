@@ -2,8 +2,16 @@
 /* eslint-disable react/prop-types */
 
 import "../styles/main.scss";
+import { useNavigate } from "react-router-dom";
+
 
 function BookCard({ data }) {
+ const navigate = useNavigate();
+  const handleBackToBooks = (e) => {
+    e.preventDefault();
+    navigate("/books");
+  };
+
   return (
     <>
       {data.map(
@@ -22,6 +30,7 @@ function BookCard({ data }) {
           content,
         }) => (
           <div className="single-book-container" key={id}>
+            <button onClick={handleBackToBooks}>Go back</button>
             <h1>{title}</h1>
             <div className="book-content">
               <div>
