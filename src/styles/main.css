@@ -7,8 +7,8 @@
   background-image: url(../assets/Bilder/books-2596809_1280.jpg);
 }
 .books-page-container h1 {
-  background-color: rgb(0, 0, 66);
-  margin: 0px 625px;
+  background-color: rgb(0, 0, 74);
+  margin: 0px 400px;
   padding: 15px;
   border-radius: 50px;
 }
@@ -22,7 +22,7 @@
   text-decoration: none;
 }
 .books-page-container .books-page-small-container a:visited {
-  color: darkblue;
+  color: rgb(0, 0, 74);
 }
 .books-page-container .books-page-small-container a:active {
   color: black;
@@ -70,6 +70,22 @@
   height: 100vh;
   background-color: gray;
 }
+.single-book-container button {
+  margin-left: 15px;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  align-self: start;
+  background: gold;
+  color: rgb(0, 0, 74);
+  border: none;
+}
+.single-book-container button:hover {
+  color: gold;
+  background-color: rgb(0, 0, 74);
+}
+.single-book-container h1 {
+  padding-left: 100px;
+}
 .single-book-container .book-content {
   padding-top: 15px;
   display: flex;
@@ -77,7 +93,6 @@
   align-items: center;
 }
 .single-book-container .book-content div:nth-child(1) {
-  background-color: lightgray;
   width: 400px;
   display: flex;
   flex-direction: row;
@@ -121,7 +136,6 @@
     display: flex;
   }
   .single-book-container .book-content div:nth-child(1) {
-    background-color: gray;
     width: 700px;
     display: flex;
     flex-direction: row;
@@ -146,9 +160,15 @@
 }
 .allcharacters-container {
   background-image: url(../assets/Bilder/man-3151723_1280.jpg);
-  background-position: left;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.allcharacters-container h1 {
+  background-color: rgb(0, 0, 66);
+  padding: 15px;
+  border-radius: 50px;
+  margin: 0px 15px;
 }
 .allcharacters-container .button-container {
   width: 100%;
@@ -179,15 +199,16 @@
 }
 .cards-container a {
   text-decoration: none;
+  color: gold;
 }
 .cards-container a:visited {
-  color: darkblue;
+  color: rgb(0, 0, 74);
 }
 .cards-container a:active {
-  color: black;
+  color: gold;
 }
 .cards-container a:hover {
-  color: gold;
+  color: black;
 }
 .cards-container .single-character-card-container {
   border: rgb(255, 255, 255) solid 1px;
@@ -199,6 +220,10 @@
   align-items: center;
   margin: 5px;
   background-color: rgba(182, 182, 182, 0.374);
+  border-radius: 15px;
+}
+.cards-container .single-character-card-container:hover {
+  background-color: rgba(111, 136, 212, 0.788);
 }
 .cards-container .single-character-card-container figure {
   width: 175px;
@@ -226,7 +251,14 @@
 }
 
 .single-character-container {
+  height: 100vh;
   background-color: gray;
+  border: solid 3px black;
+  display: flex;
+  justify-content: center;
+}
+.single-character-container .single-character-content {
+  border: solid;
 }
 
 .footer-container {
@@ -678,10 +710,11 @@ button:hover {
   background-repeat: no-repeat;
 }
 .movies-page-container h1 {
-  background-color: rgb(0, 0, 66);
+  background-color: rgb(0, 0, 74);
   margin: 0px 625px;
   padding: 15px;
   border-radius: 50px;
+  margin: 0px 400px;
 }
 .movies-page-container .movies-page-small-container {
   padding: 5px 150px;
@@ -693,7 +726,7 @@ button:hover {
   text-decoration: none;
 }
 .movies-page-container .movies-page-small-container a:visited {
-  color: darkblue;
+  color: rgb(0, 0, 74);
 }
 .movies-page-container .movies-page-small-container a:active {
   color: black;
@@ -737,7 +770,32 @@ button:hover {
 .single-movie-container {
   background: gray;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+}
+.single-movie-container button {
+  margin-left: 15px;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  align-self: start;
+  background: gold;
+  color: rgb(0, 0, 74);
+  border: none;
+}
+.single-movie-container button:hover {
+  color: gold;
+  background-color: rgb(0, 0, 74);
+}
+.single-movie-container h1 {
+  padding-left: 100px;
+}
+.single-movie-container .movie-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
 }
 .single-movie-container img {
   width: 50px;
@@ -749,7 +807,7 @@ button:hover {
   left: 0;
   width: 100%;
   padding: 10px;
-  background: rgb(0, 0, 78);
+  background: rgb(0, 0, 74);
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
@@ -943,7 +1001,6 @@ h1 {
   letter-spacing: 15px;
   font-size: 4.5rem;
   font-family: "Light", Arial, sans-serif;
-  padding-top: 50px;
 }
 
 h2 {
@@ -954,7 +1011,7 @@ h2 {
 .movies-page-container,
 .books-page-container,
 .allcharacters-container {
-  padding: 100px 0px;
+  padding: 120px 0px;
   margin-bottom: 25px;
 }
 
@@ -962,6 +1019,7 @@ h2 {
 .single-character-container,
 .single-book-container {
   margin-top: 60px;
+  padding-top: 50px;
 }
 .single-movie-container a,
 .single-character-container a,
@@ -986,7 +1044,7 @@ h2 {
 }
 
 .filter-container {
-  margin: 25px;
+  margin: 20px 0;
   background-color: rgba(181, 181, 181, 0.391);
   padding: 10px;
 }
@@ -1030,10 +1088,6 @@ h2 {
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-}
-.checkfilter-container .single-checkfilter-container [type=checkbox] {
-  height: 1.5rem;
-  width: 1.5rem;
 }
 
 .spells-container-home {

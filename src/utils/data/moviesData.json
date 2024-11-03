@@ -9,7 +9,8 @@
         "genre": "Fantasy",
         "rating": "PG",
         "poster": "https://www.wizardingworld.com/images/products/films/rectangle-1.png",
-        "shopLink": "https://www.rebuy.de/i,1163328/filme/harry-potter-1-der-stein-der-weisen"
+        "shopLink": "https://www.rebuy.de/i,1163328/filme/harry-potter-1-der-stein-der-weisen",
+        "src": "https://www.youtube.com/embed/VyHV0BRtdxo"
     },
     {
         "id": "000000000002",
@@ -21,7 +22,8 @@
         "genre": "Fantasy",
         "rating": "PG",
         "poster": "https://www.wizardingworld.com/images/products/films/rectangle-2.png",
-        "shopLink": "https://www.rebuy.de/i,6045/filme/harry-potter-2-kammer-d-schreckens"
+        "shopLink": "https://www.rebuy.de/i,6045/filme/harry-potter-2-kammer-d-schreckens",
+        "src": "https://www.youtube.com/embed/jBltxS8HfQ4"
     },
     {
         "id": "000000000003",
@@ -33,7 +35,8 @@
         "genre": "Fantasy",
         "rating": "PG",
         "poster": "https://www.wizardingworld.com/images/products/films/rectangle-3.png",
-        "shopLink": "https://www.rebuy.de/i,1163330/filme/harry-potter-3-der-gefangene-von-askaban"
+        "shopLink": "https://www.rebuy.de/i,1163330/filme/harry-potter-3-der-gefangene-von-askaban",
+        "src": "https://www.youtube.com/embed/-tdbNMVfqX4"
     },
     {
         "id": "000000000004",
@@ -45,7 +48,8 @@
         "genre": "Fantasy",
         "rating": "PG-13",
         "poster": "https://www.wizardingworld.com/images/products/films/rectangle-4.png",
-        "shopLink": "https://www.rebuy.de/i,1508432/filme/harry-potter-4-feuerkelch-ultimate-edition"
+        "shopLink": "https://www.rebuy.de/i,1508432/filme/harry-potter-4-feuerkelch-ultimate-edition",
+        "src": "https://www.youtube.com/embed/jpRcdc45ZqU"
     },
     {
         "id": "000000000005",
@@ -57,7 +61,8 @@
         "genre": "Fantasy",
         "rating": "PG-13",
         "poster": "https://www.wizardingworld.com/images/products/films/rectangle-5.png",
-        "shopLink": "https://www.rebuy.de/i,67154/filme/harry-potter-5-orden-des-phoenix"
+        "shopLink": "https://www.rebuy.de/i,67154/filme/harry-potter-5-orden-des-phoenix",
+        "src": "https://www.youtube.com/embed/z5ViKFcSXe0"
     },
     {
         "id": "000000000006",
@@ -69,7 +74,8 @@
         "genre": "Fantasy",
         "rating": "PG",
         "poster": "https://www.wizardingworld.com/images/products/films/rectangle-6.png",
-        "shopLink": "https://www.rebuy.de/i,1196698/filme/harry-potter-6"
+        "shopLink": "https://www.rebuy.de/i,1196698/filme/harry-potter-6",
+        "src": "https://www.youtube.com/embed/h9dmzYm0Ol0"
     },
     {
         "id": "000000000007",
@@ -81,7 +87,8 @@
         "genre": "Fantasy",
         "rating": "PG-13",
         "poster": "https://www.wizardingworld.com/images/products/films/rectangle-7.png",
-        "shopLink": "https://www.rebuy.de/i,1856551/filme/harry-potter-und-die-heiligtuemer-des-todes-teil-1-2-disc"
+        "shopLink": "https://www.rebuy.de/i,1856551/filme/harry-potter-und-die-heiligtuemer-des-todes-teil-1-2-disc",
+        "src": "https://www.youtube.com/embed/KVC1E5KCTP8"
     },
     {
         "id": "000000000008",
@@ -93,6 +100,7 @@
         "genre": "Fantasy",
         "rating": "PG-13",
         "poster": "https://www.wizardingworld.com/images/products/films/rectangle-8.png",
-        "shopLink": "https://www.rebuy.de/i,1856551/filme/harry-potter-und-die-heiligtuemer-des-todes-teil-1-2-disc"
+        "shopLink": "https://www.rebuy.de/i,1856551/filme/harry-potter-und-die-heiligtuemer-des-todes-teil-1-2-disc",
+        "src": "https://www.youtube.com/watch?v=JVHOtfeSf2s"
     }
 ]

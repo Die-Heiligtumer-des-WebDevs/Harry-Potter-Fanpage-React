@@ -1,5 +1,6 @@
 .filter-container {
-  margin: 25px;
+  // margin: 25px;
+  margin: 20px 0;
   background-color: rgba(181, 181, 181, 0.391);
   padding: 10px;
 }
@@ -28,7 +29,7 @@
     }
 
     &:hover {
-      background-color: #00005c; 
+      background-color: #00005c;
       color: #fff;
     }
   }
@@ -37,6 +38,7 @@
 .checkfilter-container {
   display: flex;
   justify-content: space-evenly;
+
   .single-checkfilter-container {
     width: 250px;
     height: 50px;
@@ -44,9 +46,5 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    [type="checkbox"] {
-      height: 1.5rem;
-      width: 1.5rem;
-    }
   }
 }
