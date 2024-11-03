@@ -1,10 +1,10 @@
 //All Characters (Characters.jsx)
 .allcharacters-container {
-  background-image: url(../assets/Bilder/dark-blue-starry-sky-universal-41z055lrwfvnhyzw.jpg);
-  background-position: center;
+  background-image: url(../assets/Bilder/man-3151723_1280.jpg);
+  background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
-
+ 
   .button-container {
     width: 100%;
     height: 100px;
@@ -34,6 +34,19 @@
   flex-flow: row wrap;
   justify-content: space-around;
 
+  a {
+    text-decoration: none;
+
+    &:visited {
+      color: darkblue;
+    }
+    &:active {
+      color: black;
+    }
+    &:hover {
+      color: gold;
+    }
+  }
   //Single Karte bei All-Characters
   .single-character-card-container {
     border: rgb(255, 255, 255) solid 1px;
@@ -52,6 +65,9 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      img {
+        margin-bottom: 20px;
+      }
     }
 
     .names {
@@ -74,5 +90,5 @@
 
 //SingleCharacterPage.jsx
 .single-character-container {
-background-color: gray;
+  background-color: gray;
 }

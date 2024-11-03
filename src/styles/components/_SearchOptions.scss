@@ -1,6 +1,7 @@
 .filter-container {
   margin: 25px;
   background-color: rgba(181, 181, 181, 0.391);
+  padding: 10px;
 }
 
 .textfilter-container {
@@ -27,7 +28,7 @@
     }
 
     &:hover {
-      background-color: #00005c; // Lighter shade of purple on hover
+      background-color: #00005c; 
       color: #fff;
     }
   }
