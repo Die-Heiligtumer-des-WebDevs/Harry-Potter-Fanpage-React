@@ -161,7 +161,7 @@
   }
 }
 .allcharacters-container {
-  background-image: url(../assets/Bilder/man-3151723_1280.jpg);
+  background-image: url("../assets/charachtere.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
