@@ -255,7 +255,6 @@
 .single-character-container {
   height: 100vh;
   background-color: gray;
-  border: solid 3px black;
   display: flex;
   justify-content: center;
 }
