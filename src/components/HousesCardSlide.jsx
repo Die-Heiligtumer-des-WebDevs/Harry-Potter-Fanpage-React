@@ -4,6 +4,9 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import "../styles/main.scss";
 
 import gryffindorImage from '../assets/housesLogos/gryffindor.jpg';
+import slytherinImage from '../assets/housesLogos/slytherin.jpg'
+import hufflepuffImage from '../assets/housesLogos/hufflepuff.jpg'
+import ravenclawImage from '../assets/housesLogos/ravenclaw.jpg'
 
 function HouseCardSlide() {
   const initialItems = [
@@ -15,17 +18,17 @@ function HouseCardSlide() {
     {
       name: 'Slytherin',
       description: 'Ambition, cunning, resourcefulness. House of leaders and strategists. Values loyalty to friends and allies.',
-      imageUrl: '../assets/housesLogos/slytherin.jpg',
+      imageUrl: slytherinImage,
     },
     {
       name: 'Hufflepuff',
       description: 'Loyalty, patience, hard work. House of kindness and inclusivity. Values fairness and justice for all',
-      imageUrl: 'src/assets/housesLogos/hufflepuff.jpg',
+      imageUrl: hufflepuffImage,
     },
     {
       name: 'Ravenclaw',
       description: 'Wisdom, intelligence, creativity. House of thinkers and innovators. Values curiosity and a love for learning.',
-      imageUrl: 'src/assets/housesLogos/ravenclaw.jpg',
+      imageUrl: ravenclawImage,
     },
   ];
 
