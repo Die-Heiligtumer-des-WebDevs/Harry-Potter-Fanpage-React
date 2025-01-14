@@ -2,12 +2,15 @@ import React, { useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 // import '../styles/components/houseCard.scss';
 import "../styles/main.scss";
+
+import gryffindorImage from '../assets/housesLogos/gryffindor.jpg';
+
 function HouseCardSlide() {
   const initialItems = [
     {
       name: 'Gryffindor',
       description: 'Courage, bravery, determination. House of heroes and champions. Values friendship and loyalty',
-      imageUrl: '../assets/housesLogos/gryffindor.jpg'
+      imageUrl: gryffindorImage;
     },
     {
       name: 'Slytherin',
@@ -17,12 +20,12 @@ function HouseCardSlide() {
     {
       name: 'Hufflepuff',
       description: 'Loyalty, patience, hard work. House of kindness and inclusivity. Values fairness and justice for all',
-      imageUrl: '../assets/housesLogos/hufflepuff.jpg',
+      imageUrl: 'src/assets/housesLogos/hufflepuff.jpg',
     },
     {
       name: 'Ravenclaw',
       description: 'Wisdom, intelligence, creativity. House of thinkers and innovators. Values curiosity and a love for learning.',
-      imageUrl: '../assets/housesLogos/ravenclaw.jpg',
+      imageUrl: 'src/assets/housesLogos/ravenclaw.jpg',
     },
   ];
 
