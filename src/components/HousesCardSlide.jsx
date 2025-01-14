@@ -10,7 +10,7 @@ function HouseCardSlide() {
     {
       name: 'Gryffindor',
       description: 'Courage, bravery, determination. House of heroes and champions. Values friendship and loyalty',
-      imageUrl: gryffindorImage;
+      imageUrl: gryffindorImage
     },
     {
       name: 'Slytherin',
